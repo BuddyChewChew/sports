@@ -2,8 +2,8 @@ name: Update Sports Playlist
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # Every 15 minutes
-  workflow_dispatch:      # Manual run button
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -26,9 +26,9 @@ jobs:
       - name: Run Fetcher
         run: python streamed_fetcher.py
 
-      - name: Save JSON and M3U to Repo
+      - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add live.json streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update live data and playlist" && git push)
+          git add streamed.m3u
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update M3U from repo JSON" && git push)
