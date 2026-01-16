@@ -34,5 +34,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add streamed.m3u
-          git commit -m "📺 Update streamedsu: $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "No changes to commit"
+          git commit -m "📺 Update streamedsu ($(date -u +'%Y-%m-%d %H:%M UTC'))" || echo "No changes to commit"
           git push
