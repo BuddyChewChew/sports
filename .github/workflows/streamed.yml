@@ -20,18 +20,18 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Playwright
+      - name: Install Dependencies
         run: |
           pip install playwright
           playwright install chromium
           playwright install-deps chromium
 
-      - name: Run Scraper
+      - name: Run Fetcher
         run: python streamed_fetcher.py
 
-      - name: Push to Repo
+      - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Capture lb7.strmd.top links" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Capture dynamic m3u8 links" && git push)
