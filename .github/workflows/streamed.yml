@@ -1,9 +1,10 @@
 name: Update Sports Playlist
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
-  workflow_dispatch:
+  push:
+    paths:
+      - 'live.json'       # Runs automatically when you upload/update live.json
+  workflow_dispatch:      # Manual trigger
 
 permissions:
   contents: write
@@ -31,4 +32,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Bypass API block via HTML scraping" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Generated M3U from live.json" && git push)
