@@ -45,8 +45,9 @@ jobs:
             exit 0
           fi
 
-          git commit -m "📺 Updated RoxieStreams with Mirrors ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git commit -m "📺 Updated RoxieStreams: Full Category Support & Mirrors ($(date -u +'%Y-%m-%d %H:%M UTC'))"
 
+          # Random delay to reduce push collisions
           sleep $((RANDOM % 10 + 5))
 
           if ! git push origin main; then
