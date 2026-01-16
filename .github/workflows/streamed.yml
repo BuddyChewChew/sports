@@ -9,10 +9,10 @@ permissions:
   contents: write
 
 jobs:
-  refresh-streams:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout Repo
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -26,9 +26,9 @@ jobs:
       - name: Run Fetcher
         run: python streamed_fetcher.py
 
-      - name: Push to Repo
+      - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Fix list resolution and update live links" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Live match sync fix" && git push)
