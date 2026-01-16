@@ -13,7 +13,7 @@ OUTPUT_FILE = 'streamed.m3u'
 
 class StreamFetcher:
     def __init__(self):
-        # Impersonate a real browser to bypass anti-scraping on the embed site
+        # We use curl_cffi to match the TLS 1.3 fingerprint from your DevTools
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update({
             'Referer': 'https://streamed.su/',
@@ -22,14 +22,14 @@ class StreamFetcher:
         })
 
     def scrape_direct_link(self, embed_url):
-        """Extracts the direct .m3u8 link from the Clappr player configuration."""
+        """Extracts the direct m3u8 link hidden in the Clappr player JS."""
         try:
             resp = self.session.get(embed_url, timeout=15)
             if resp.status_code == 200:
                 html = resp.text
                 
-                # Specifically targeting the Clappr 'source:' definition
-                # This finds the lb*.strmd.top pattern you identified
+                # This pattern searches for the 'source' link used by Clappr
+                # It handles the lb*.strmd.top URLs you saw in your network tab
                 patterns = [
                     r'source\s*:\s*["\'](https?://lb[0-9]+\.strmd\.top/secure/[^"\']+\.m3u8[^"\']*)["\']',
                     r'(https?://lb[0-9]+\.strmd\.top/secure/[^"\']+\.m3u8[^\s"\'\\]*)',
@@ -39,18 +39,19 @@ class StreamFetcher:
                 for pattern in patterns:
                     found = re.findall(pattern, html)
                     if found:
-                        # Unescape and return the first valid link found
+                        # Clean up any backslashes (escaping) used in the JS
                         clean_link = found[0].replace('\\/', '/').replace('\\', '')
+                        print(f"      ✅ Found Stream: {clean_link[:50]}...")
                         return clean_link
         except Exception as e:
-            print(f"      Scrape Error: {e}")
+            print(f"      Scrape Error on {embed_url}: {e}")
         return None
 
     def get_resolved_url(self, provider, stream_id):
-        """Calls the stream API to get the embed URL, then scrapes the video file."""
+        """Resolves the provider/ID into an embed page, then scrapes the m3u8."""
         api_url = f"{STREAM_API_BASE}/{provider}/{stream_id}"
         try:
-            # Add a timestamp to bypass API caching
+            # Timestamp helps bypass server-side caching
             resp = self.session.get(f"{api_url}?t={int(datetime.now().timestamp())}", timeout=10)
             if resp.status_code == 200:
                 streams = resp.json()
@@ -65,7 +66,7 @@ class StreamFetcher:
         return None
 
     def generate_m3u(self):
-        print(f"--- Starting TiviMate-Ready Stream Scraper ---")
+        print(f"--- Starting TiviMate Stream Resolver ---")
         try:
             response = self.session.get(f"{RAW_JSON_URL}?t={int(datetime.now().timestamp())}")
             response.raise_for_status()
@@ -79,7 +80,6 @@ class StreamFetcher:
 
         for match in matches:
             title = match.get('title', 'Live Event')
-            # Normalize category for TiviMate groups
             category = match.get('category', 'Sports').replace('-', ' ').title()
             poster = match.get('poster', '')
             if poster.startswith('/'):
@@ -93,7 +93,7 @@ class StreamFetcher:
                 direct_video_link = self.get_resolved_url(provider, sid)
                 
                 if direct_video_link:
-                    # Final M3U structure with required TVG tags
+                    # Optimized metadata for TiviMate
                     m3u_content.append(f'#EXTINF:-1 tvg-logo="{poster}" group-title="{category}",{title} ({provider.upper()})')
                     m3u_content.append(direct_video_link)
                     count += 1
@@ -102,7 +102,7 @@ class StreamFetcher:
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write('\n'.join(m3u_content))
         
-        print(f"\n✅ Success: Generated {OUTPUT_FILE} with {count} playable m3u8 links.")
+        print(f"\n✅ Finished: Created playlist with {count} playable links.")
 
 if __name__ == "__main__":
     fetcher = StreamFetcher()
