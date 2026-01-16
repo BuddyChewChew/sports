@@ -2,17 +2,17 @@ name: Update Sports Playlist
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 mins since we only want "Live Now"
-  workflow_dispatch:
+    - cron: '*/15 * * * *' # Updates every 15 minutes
+  workflow_dispatch:      # Manual trigger button in GitHub
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  refresh-streams:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -23,12 +23,12 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Run Live Scraper
+      - name: Run Fetcher
         run: python streamed_fetcher.py
 
-      - name: Commit Files
+      - name: Push to Repo
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated Live Now streams" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update live sports links" && git push)
