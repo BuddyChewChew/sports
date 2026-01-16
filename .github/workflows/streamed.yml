@@ -2,8 +2,8 @@ name: Update Sports Playlist
 
 on:
   schedule:
-    - cron: '0 * * * *' # Automatically runs every hour
-  workflow_dispatch:      # Allows you to click "Run" manually
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,23 +12,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Setup Python 3.10
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Install Requests
+      - name: Install Dependencies
         run: pip install requests
 
-      - name: Execute Scraper
+      - name: Run Scraper
         run: python streamed_fetcher.py
 
-      - name: Save Playlist to Repo
+      - name: Commit Files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update sports playlist links" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated links via web scraper" && git push)
