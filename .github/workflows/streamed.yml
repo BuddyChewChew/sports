@@ -31,4 +31,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Scrape direct m3u8 links for TiviMate" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Capture direct m3u8 links for TiviMate" && git push)
