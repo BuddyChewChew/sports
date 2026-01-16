@@ -20,13 +20,13 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Playwright and Browser
+      - name: Install Playwright and Deps
         run: |
           pip install playwright
           playwright install chromium
           playwright install-deps chromium
 
-      - name: Run Deep Scraper
+      - name: Run Stealth Scraper
         run: python streamed_fetcher.py
 
       - name: Push to Repo
@@ -34,4 +34,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Capture dynamic m3u8 via Playwright" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Capture dynamic links via stealth interaction" && git push)
