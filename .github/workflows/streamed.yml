@@ -31,4 +31,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update groups and resolve embedUrls" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Optimize groups and logo paths" && git push)
