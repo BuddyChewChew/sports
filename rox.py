@@ -8,23 +8,24 @@ import logging
 BASE_URL = "https://roxiestreams.live"
 EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
-# Mapping for Logos and EPG IDs based on the categories you identified
+# Enhanced Mapping: (EPG_ID, Logo_URL, Group_Name)
 TV_INFO = {
-    "ppv": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true"),
-    "soccer": ("Soccer.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true"),
-    "ufc": ("UFC.Fight.Pass.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/mma.png?raw=true"),
-    "fighting": ("Combat.Sports.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true"),
-    "nfl": ("Football.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nfl.png?raw=true"),
-    "nhl": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true"),
-    "hockey": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true"),
-    "f1": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true"),
-    "motorsports": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true"),
-    "wwe": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/wwe.png?raw=true"),
-    "nba": ("NBA.Basketball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nba.png?raw=true"),
-    "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true")
+    "ppv": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true", "PPV Events"),
+    "soccer": ("Soccer.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true", "Soccer"),
+    "ufc": ("UFC.Fight.Pass.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/mma.png?raw=true", "Combat Sports"),
+    "fighting": ("Combat.Sports.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true", "Combat Sports"),
+    "nfl": ("Football.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nfl.png?raw=true", "Football"),
+    "nhl": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true", "Hockey"),
+    "hockey": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true", "Hockey"),
+    "f1": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports"),
+    "motorsports": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports"),
+    "wwe": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/wwe.png?raw=true", "Wrestling"),
+    "nba": ("NBA.Basketball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nba.png?raw=true", "Basketball"),
+    "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true", "Baseball")
 }
 
 DEFAULT_LOGO = "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true"
+DEFAULT_GROUP = "General Sports"
 DISCOVERY_KEYWORDS = list(TV_INFO.keys()) + ['streams']
 SECTION_BLOCKLIST = ['olympia']
 
@@ -38,12 +39,12 @@ M3U8_REGEX = re.compile(r'https?://[^\s"\'<>`]+\.m3u8')
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_tv_info(url, title=""):
-    """Determines logo and EPG ID by checking both URL and Event Title."""
+    """Determines logo, EPG ID, and Group Name by checking both URL and Event Title."""
     combined_text = (url + title).lower()
-    for key, value in TV_INFO.items():
+    for key, (epg_id, logo, group) in TV_INFO.items():
         if key in combined_text:
-            return value
-    return ("Sports.Rox.us", DEFAULT_LOGO)
+            return epg_id, logo, group
+    return "Sports.Rox.us", DEFAULT_LOGO, DEFAULT_GROUP
 
 def discover_sections(base_url):
     """Finds top-level categories like /nba, /nhl, etc."""
@@ -122,7 +123,8 @@ def main():
         pages = event_links if event_links else {(section_url, section_title)}
 
         for event_url, event_title in pages:
-            tv_id, logo = get_tv_info(event_url, event_title)
+            # Now returns 3 items: ID, Logo, and the Group name
+            tv_id, logo, group_name = get_tv_info(event_url, event_title)
             m3u8_links = extract_m3u8_links(event_url)
             
             for link in m3u8_links:
@@ -136,13 +138,14 @@ def main():
                     
                     display_name = event_title if count == 1 else f"{event_title} (Mirror {count-1})"
                     
-                    playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="Roxiestreams",{display_name}')
+                    # group-title is now set to group_name instead of a hardcoded string
+                    playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="{group_name}",{display_name}')
                     playlist_lines.append(link)
                     seen_links.add(link)
 
     with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(playlist_lines))
-    logging.info(f"Playlist updated. Found {len(seen_links)} unique streams.")
+    logging.info(f"Playlist updated. Found {len(seen_links)} unique streams grouped by category.")
 
 if __name__ == "__main__":
     main()
