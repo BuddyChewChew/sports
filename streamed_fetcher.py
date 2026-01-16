@@ -10,38 +10,40 @@ STREAM_API_BASE = "https://streamed.su/api/stream"
 OUTPUT_FILE = 'streamed.m3u'
 
 async def get_m3u8_from_page(context, embed_url):
-    """Uses stealth tactics and interaction to force the stream to reveal itself."""
+    """Intercepts the specific strmd.top master playlist."""
     page = await context.new_page()
     m3u8_link = None
 
-    # Listen for the hidden stream link in the background traffic
+    # This is your 'Network' tab automation
     def handle_request(request):
         nonlocal m3u8_link
-        url = request.url.lower()
-        if ".m3u8" in url and ("strmd" in url or "secure" in url or "playlist" in url):
-            if not m3u8_link: # Capture the first valid master playlist
-                m3u8_link = request.url
+        url = request.url
+        # Target the exact domain and file type from your screenshot
+        if ".m3u8" in url and "strmd.top" in url:
+            # We want the playlist, not the individual TS segments
+            if "playlist.m3u8" in url:
+                m3u8_link = url
 
     page.on("request", handle_request)
 
     try:
-        # 1. Set a realistic viewport
+        # Bypass the 'abort-on-property-read' traps you found in DevTools
+        await page.add_init_script("delete Object.getPrototypeOf(navigator).webdriver")
+        
         await page.set_viewport_size({"width": 1280, "height": 720})
-        
-        # 2. Navigate and wait for the "Play" button/overlay
         print(f"      Navigating to: {embed_url}")
-        await page.goto(embed_url, wait_until="domcontentloaded", timeout=45000)
         
-        # 3. Forced Interaction: Many players won't load the m3u8 until a click happens
-        # We wait a few seconds, then click the center of the screen
-        await asyncio.sleep(5)
-        print("      Simulating User Interaction (Clicking Player)...")
+        # Go to the player page
+        await page.goto(embed_url, wait_until="load", timeout=60000)
+        
+        # Wait for the player to initialize and click to trigger the stream
+        await asyncio.sleep(6)
         await page.mouse.click(640, 360) 
         
-        # 4. Wait for the handshake to complete
-        await asyncio.sleep(10) 
+        # Wait for the network request to appear (like in your screenshot)
+        await asyncio.sleep(12) 
     except Exception as e:
-        print(f"      Status: Timeout or Page Error (Continuing...)")
+        print(f"      Error probing page: {e}")
     finally:
         await page.close()
     
@@ -49,35 +51,23 @@ async def get_m3u8_from_page(context, embed_url):
 
 async def main():
     async with async_playwright() as p:
-        # Launching with arguments to disable headless tell-tales
-        browser = await p.chromium.launch(headless=True, args=[
-            '--disable-blink-features=AutomationControlled',
-            '--no-sandbox',
-            '--disable-setuid-sandbox'
-        ])
-        
+        browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            locale="en-US",
-            timezone_id="America/New_York"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
 
-        print("--- Starting Stealth Playwright Resolver ---")
+        print("--- Resolving Links from strmd.top ---")
         
-        # Fetch initial match data
-        try:
-            response = await context.request.get(f"{RAW_JSON_URL}?t={int(datetime.now().timestamp())}")
-            matches = await response.json()
-        except Exception as e:
-            print(f"❌ Failed to fetch live.json: {e}")
-            return
+        # Fetch the live matches
+        response = await context.request.get(f"{RAW_JSON_URL}?t={int(datetime.now().timestamp())}")
+        matches = await response.json()
 
         m3u_content = ["#EXTM3U", ""]
         count = 0
 
         for match in matches:
-            title = match.get('title', 'Live Match')
-            category = match.get('category', 'Sports').replace('-', ' ').title()
+            title = match.get('title', 'Match')
+            category = match.get('category', 'Sports').title()
             poster = match.get('poster', '')
             if poster.startswith('/'): poster = f"https://streamed.su{poster}"
 
@@ -85,24 +75,23 @@ async def main():
                 provider = source.get('source')
                 sid = source.get('id')
                 
-                print(f"Resolving: {title} ({provider.upper()})...")
+                print(f"Checking: {title} ({provider.upper()})...")
                 
-                # Get the player page link from API
+                # Fetch the embed URL
                 api_url = f"{STREAM_API_BASE}/{provider}/{sid}"
                 try:
-                    api_resp = await context.request.get(f"{api_url}?t={int(datetime.now().timestamp())}")
+                    api_resp = await context.request.get(api_url)
                     streams = await api_resp.json()
-                    
-                    if streams and len(streams) > 0:
+                    if streams:
                         embed_url = streams[0].get('embedUrl')
                         if embed_url:
                             if embed_url.startswith('//'): embed_url = 'https:' + embed_url
                             
-                            # Perform the deep resolve
+                            # Capture the dynamic link
                             direct_link = await get_m3u8_from_page(context, embed_url)
                             
                             if direct_link:
-                                print(f"      ✅ Link Caught: {direct_link[:60]}...")
+                                print(f"      ✅ Captured: {direct_link[:50]}...")
                                 m3u_content.append(f'#EXTINF:-1 tvg-logo="{poster}" group-title="{category}",{title} ({provider.upper()})')
                                 m3u_content.append(direct_link)
                                 count += 1
@@ -113,7 +102,7 @@ async def main():
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write('\n'.join(m3u_content))
         
-        print(f"\n✅ Finished: Created playlist with {count} playable links.")
+        print(f"\n✅ Finished! Created playlist with {count} links.")
         await browser.close()
 
 if __name__ == "__main__":
