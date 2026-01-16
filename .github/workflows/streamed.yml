@@ -3,7 +3,7 @@ name: Update Sports Playlist
 on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
-  workflow_dispatch:      # Allows manual run
+  workflow_dispatch:      # Allows manual trigger
 
 permissions:
   contents: write
@@ -31,4 +31,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update streamed.m3u" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update active streams in streamed.m3u" && git push)
