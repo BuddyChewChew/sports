@@ -2,8 +2,8 @@ name: Update Sports Playlist
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # Updates every 15 minutes
-  workflow_dispatch:      # Manual trigger button in GitHub
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -31,4 +31,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add streamed.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update live sports links" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Fix list resolution and update live links" && git push)
