@@ -1,9 +1,9 @@
 name: Update ISTPLAY M3U List
 
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *' # Run every 30 minutes
+    - cron: '*/30 * * * *'
 
 jobs:
   build:
@@ -34,5 +34,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add istplay_streams.m3u
-          git commit -m "Automated M3U Update: $(date)" || exit 0
+          git commit -m "Automated M3U Update with EPG tags: $(date)" || exit 0
           git push
