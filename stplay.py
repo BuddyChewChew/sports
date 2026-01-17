@@ -36,7 +36,10 @@ def get_m3u8_istplay(stream_id, headers):
         print(f"⚠️ Error (istplay stream_id={stream_id}): {e}", file=sys.stderr)
     return stream_id, None
 
-# --- 1.3. IstPlay: Sport names and logos (Translated to English) ---
+# --- 1.3. IstPlay: Sport names and logos ---
+# Default logo for any sport not explicitly listed below
+DEFAULT_LOGO = "https://cdn-icons-png.flaticon.com/512/531/531313.png"
+
 SPORT_TRANSLATION_ISTPLAY = {
     "HORSE_RACING": {"name": "HORSE RACING", "logo": "https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg"},
     "FOOTBALL"    : {"name": "FOOTBALL", "logo": "https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg"},
@@ -45,7 +48,7 @@ SPORT_TRANSLATION_ISTPLAY = {
     "ICE_HOCKEY"  : {"name": "ICE HOCKEY", "logo": "https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg"},
     "TABLE_TENNIS": {"name": "TABLE TENNIS", "logo": "https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg"},
     "VOLLEYBALL"  : {"name": "VOLLEYBALL", "logo": "https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg"},
-    "BADMINTON"   : {"name": "BADMINTON", "logo": "https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg"},
+    "BADMINTON"   : {"name": "BADMİNTON", "logo": "https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg"},
     "CRICKET"     : {"name": "CRICKET", "logo": "https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg"},
     "HANDBALL"    : {"name": "HANDBALL", "logo": "https://image.fanatik.com.tr/i/fanatik/75/0x410/6282949745d2a051587ed23b.jpg"},
     "BASEBALL"    : {"name": "BASEBALL", "logo": "https://seyler.ekstat.com/img/max/800/d/dqOJz5N8jLORqVaA-636783298725804088.jpg"},
@@ -78,14 +81,15 @@ def main():
         return
 
     all_events = []
-    for sport_name, sport_category in parsed.get("sports", {}).items():
+    # Grab all sports from the 'sports' object dynamically
+    for sport_key, sport_category in parsed.get("sports", {}).items():
         if not isinstance(sport_category, dict): continue
         events = sport_category.get("events", {})
         iterable = events.items() if isinstance(events, dict) else [(str(i), e) for i, e in enumerate(events)]
         for event_id, event_data in iterable:
             stream_id = event_data.get("stream_id")
             if stream_id:
-                all_events.append((sport_name, event_id, event_data))
+                all_events.append((sport_key, event_id, event_data))
 
     if not all_events:
         print("ℹ️ [IstPlay] No events found.")
@@ -95,7 +99,7 @@ def main():
     with ThreadPoolExecutor(max_workers=20) as executor:
         future_to_event = {executor.submit(get_m3u8_istplay, ev[2]['stream_id'], headers): ev for ev in all_events}
         for future in as_completed(future_to_event):
-            sport_name, event_id, event_data = future_to_event[future]
+            sport_key, event_id, event_data = future_to_event[future]
             try:
                 sid, m3u8_url = future.result()
                 event_data["m3u8_url"] = m3u8_url
@@ -105,7 +109,7 @@ def main():
     output_lines = ['#EXTM3U', '']
     found_streams_count = 0
 
-    for sport_name, sport_category in parsed.get("sports", {}).items():
+    for sport_key, sport_category in parsed.get("sports", {}).items():
         if not isinstance(sport_category, dict): continue
         events = sport_category.get("events", {})
         iterable = events.items() if isinstance(events, dict) else [(str(i), e) for i, e in enumerate(events)]
@@ -127,11 +131,12 @@ def main():
                     start_time_str = f"[{dt_object.strftime('%H:%M')}] "
                 except: pass
 
-            sport_info = SPORT_TRANSLATION_ISTPLAY.get(sport_name.upper(), {"name": sport_name.upper(), "logo": ""})
+            # Use translation if available, otherwise fallback to raw name and generic icon
+            sport_info = SPORT_TRANSLATION_ISTPLAY.get(sport_key.upper(), {"name": sport_key.upper(), "logo": DEFAULT_LOGO})
             display_sport = sport_info["name"]
-            logo_url = sport_info.get("logo", "")
+            logo_url = sport_info.get("logo", DEFAULT_LOGO)
 
-            if sport_name.upper() == "HORSE_RACING":
+            if sport_key.upper() == "HORSE_RACING":
                 display_title = f"{start_time_str}{home.upper()} ({league.upper()})"
             else:
                 display_title = f"{start_time_str}{home.upper()} vs {away.upper()} ({league.upper()})"
