@@ -12,6 +12,9 @@ VALID_CONTENT_TYPES = [
     "video/x-flv",
 ]
 
+# The EPG URL to be added to the header
+EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
+
 def is_stream_playable(url: str, headers=None) -> bool:
     headers = headers or {}
     try:
@@ -37,7 +40,8 @@ def filter_m3u_playlist(input_path: str, output_path: str):
     with open(input_path, "r", encoding="utf-8") as f:
         lines = [line.rstrip() for line in f]
 
-    output_lines = ["#EXTM3U"]
+    # Integrated EPG URL into the M3U header
+    output_lines = [f'#EXTM3U url-tvg="{EPG_URL}"']
     buffer_tags = []
     buffer_vlcopt = []
 
@@ -46,7 +50,7 @@ def filter_m3u_playlist(input_path: str, output_path: str):
             buffer_tags.append(line)
         elif line.startswith("#EXTVLCOPT"):
             buffer_vlcopt.append(line)
-        elif line.strip():
+        elif line.strip() and not line.startswith("#"):
             url = line.strip()
             # Convert VLC options to HTTP headers
             headers = {}
@@ -78,19 +82,19 @@ def filter_m3u_playlist(input_path: str, output_path: str):
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(output_lines) + "\n")
 
-    print(f"\nSaved filtered playlist to: {output_path}")
+    print(f"\nSaved filtered playlist with EPG header to: {output_path}")
 
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python filter_m3u_playlist.py input.m3u output.m3u")
+        print("Usage: python liveeventsfilter.py input.m3u output.m3u")
         sys.exit(1)
 
     input_m3u = sys.argv[1]
     output_m3u = sys.argv[2]
 
     if not Path(input_m3u).exists():
-        print("Input file does not exist.")
+        print(f"Input file {input_m3u} does not exist.")
         sys.exit(1)
 
     filter_m3u_playlist(input_m3u, output_m3u)
