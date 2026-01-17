@@ -27,7 +27,7 @@ jobs:
           pip install requests zstandard beautifulsoup4
 
       - name: Run script
-        run: python istplay_fetcher.py
+        run: python stplay.py
 
       - name: Commit and push changes
         run: |
