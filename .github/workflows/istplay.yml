@@ -1,0 +1,59 @@
+name: İSTPLAY M3U Listesini Oluştur ve Güncelle
+
+on:
+  workflow_dispatch: # Manuel olarak tetikleme
+  schedule:
+    - cron: '*/30 * * * *' # 30 dakikada bir otomatik çalıştır
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    # Adım: Depoya yazma izni ver
+    # Bu, 'git push' adımının başarılı olması için gereklidir.
+    permissions:
+      contents: write
+
+    steps:
+      # 1. Adım: Depodaki kodları (stplay.py ve requirements.txt) runner'a indir
+      - name: Depoyu Klonla
+        uses: actions/checkout@v4
+
+      # 2. Adım: Python 3.10'u kur
+      - name: Python 3.10 Kurulumu
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip' # pip önbelleğini kullanarak kurulumları hızlandır
+
+      # 3. Adım: Gerekli Python kütüphanelerini kur
+      # Burası requirements.txt dosyasını okur ve (requests, zstandard, beautifulsoup4) kurar.
+      - name: Gerekli Kütüphaneleri Kur
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            echo "requirements.txt bulunamadı, kurulum atlanıyor."
+          fi
+      
+      # 4. Adım: Python betiğini çalıştırarak M3U dosyasını oluştur
+      - name: M3U Listesini Oluştur
+        run: python stplay.py
+
+      # 5. Adım: Oluşturulan M3U dosyasını depoya geri yükle (Commit)
+      - name: Değişiklikleri Depoya Yükle
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Yalnızca 'istplay_streams.m3u' dosyasında değişiklik varsa commit at
+          git add istplay_streams.m3u
+          
+          # Değişiklik olup olmadığını kontrol et
+          if [[ -n $(git status --porcelain) ]]; then
+            git commit -m "M3U listesi güncellendi (Otomatik)"
+            git push
+          else
+            echo "Değişiklik bulunamadı, commit atılmadı."
+          fi
