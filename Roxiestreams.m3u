@@ -1,13 +1,9 @@
 #EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true" group-title="Soccer",Udinese vs Inter Milan
 https://daffodil.shadow-ran.online/main.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true" group-title="Hockey",Columbus Blue Jackets vs Pittsburgh Penguins
-https://601.shadow-ran.online/nhl7.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true" group-title="Hockey",Edmonton Oilers vs Vancouver Canucks
-https://601.shadow-ran.online/nhl11.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true" group-title="Hockey",Toronto Maple Leafs vs Winnipeg Jets
-https://601.shadow-ran.online/nhl9.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true" group-title="Hockey",Carolina Hurricanes vs New Jersey Devils
-https://601.shadow-ran.online/nhl6.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true" group-title="Hockey",Boston Bruins vs Chicago Blackhawks
-https://601.shadow-ran.online/nhl10.m3u8
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true" group-title="Soccer",Napoli vs Sassuolo
+https://daffodil.shadow-ran.online/golazo.m3u8
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true" group-title="Soccer",RB Leipzig vs Bayern MÃ¼nchen
+https://daffodil.shadow-ran.online/arena.m3u8
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true" group-title="Soccer",Coventry City vs Leicester City
+https://daffodil.shadow-ran.online/cbssn.m3u8
