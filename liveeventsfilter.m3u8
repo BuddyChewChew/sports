@@ -484,16 +484,6 @@ http://origin.thetvapp.to/hls/NHL18/mono.m3u8
 #EXTVLCOPT:http-origin=https://tvpass.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://origin.thetvapp.to/hls/NHLNetwork/mono.m3u8
-#EXTINF:-1 tvg-chno="212" tvg-id="Soccer.Dummy.us" tvg-name="[Netherlands Eredivisie] Heracles vs Twente (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/11.png" group-title="Live Events",[Netherlands Eredivisie] Heracles vs Twente (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://d12.epicquesthero.com:999/hls/do88.m3u8?md5=iUCP27VgjPz6-7NUECNl4w&expires=1768752025
-#EXTINF:-1 tvg-chno="213" tvg-id="Soccer.Dummy.us" tvg-name="[Netherlands Eredivisie] Volendam vs Utrecht (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/11.png" group-title="Live Events",[Netherlands Eredivisie] Volendam vs Utrecht (SPORT9)
-#EXTVLCOPT:http-referrer=https://vividmosaica.com/
-#EXTVLCOPT:http-origin=https://vividmosaica.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://d15.epicquesthero.com:999/hls/do90.m3u8?md5=D-TBGT7YGQtZSYcnfF8mIw&expires=1768752041
 #EXTINF:-1 tvg-chno="214" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Aston Villa vs Everton (STRMBTW)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="Live Events",[Premier League] Aston Villa vs Everton (STRMBTW)
 #EXTVLCOPT:http-referrer=https://hiteasport.info/embed/soccer1.php
 #EXTVLCOPT:http-origin=https://hiteasport.info/embed/soccer1.php
@@ -519,11 +509,6 @@ https://pl8.astroignite.space/playlist/43538/load-playlist
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=sport+tv+1&code=pt&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn-live-tv.ru/api/v1/channels/pt-sport-tv-1/index.m3u8?token=87c59c44b2b3f916ea30527518f426f024f9ddd0cff9e5cbf725baa1c9d40ffc.1768748482.1411668a1aeef41b5620956d113534c5.cf8b320a0a2fe0ce28c155e139628d48.b9733fa8c3a92733f300674cd39aad3e.920c3b38dc665ee8
-#EXTINF:-1 tvg-chno="221" tvg-id="Live.Event.us" tvg-name="[Romania Superliga] Csikszereda M Ciuc vs FC Botosani (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Romania Superliga] Csikszereda M Ciuc vs FC Botosani (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://205.237.105.202/hls/JPPPQ.m3u8
 #EXTINF:-1 tvg-chno="223" tvg-id="Live.Event.us" tvg-name="[Rugby Challenge Cup] Lyon vs Benetton (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Rugby Challenge Cup] Lyon vs Benetton (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -599,6 +584,11 @@ http://205.237.104.56/hls/VTTTTQQQ.m3u8
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=cosmote+sport+1&code=gr&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn-live-tv.ru/api/v1/channels/gr-cosmote-sport-1/index.m3u8?token=1464eb23178bfc8f03f061f6fdf9984684334689366b9533469ffa854c9d0f97.1768748460.bae93bd5474cca7b5ace8a54fc8ef50b.47a2a82f924c1f78db1b26b557133a13.e5a94ab2c60adabced005a4e677478f8.45b87074aedde7a0
+#EXTINF:-1 tvg-chno="269" tvg-id="Live.Event.us" tvg-name="[Turkey Lig 1] Boluspor vs Sariyer (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Turkey Lig 1] Boluspor vs Sariyer (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://205.237.104.133/hls/FIIIQQQQ.m3u8
 #EXTINF:-1 tvg-chno="270" tvg-id="Soccer.Dummy.us" tvg-name="[Turkey Super Lig] Genclerbirligi vs Samsunspor (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/18.png" group-title="Live Events",[Turkey Super Lig] Genclerbirligi vs Samsunspor (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -629,11 +619,6 @@ https://getbroadcast.click/hls/DcTxPWHOB5aM/index.m3u8?st=eQLvd-wFMysq1XPE4Hj74A
 #EXTVLCOPT:http-origin=https://storytrench.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://getbroadcast.click/hls/hhx33tWwGEeW/index.m3u8?st=YRft41SoCmMw1dWrKWt8QQ&e=1768755675
-#EXTINF:-1 tvg-chno="277" tvg-id="Live.Event.us" tvg-name="[UAE Premier League] Bani Yas vs Al Bataeh (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UAE Premier League] Bani Yas vs Al Bataeh (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://205.237.104.133/hls/DPDPDPZ.m3u8
 #EXTINF:-1 tvg-chno="278" tvg-id="Live.Event.us" tvg-name="[UCI Cyclocross] UCI Cyclocross Benidorm (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UCI Cyclocross] UCI Cyclocross Benidorm (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
