@@ -2,7 +2,7 @@ name: ▶️ Update RoxieStreams
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/30 * * * *'  # ⏰ Runs every 30 minutes
   workflow_dispatch:
 
 permissions:
@@ -11,20 +11,46 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: 📦 Install dependencies
-        run: pip install requests beautifulsoup4
-      - name: 🎯 Run Scraper
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: 🎯 Run RoxieStreams scraper
         run: python rox.py
-      - name: 💾 Commit & Push
+
+      - name: 💾 Commit & Push if Playlist Changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add Roxiestreams.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "📺 NFL & Mirror Scan Update" && git push)
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes detected — skipping commit."
+            exit 0
+          fi
+
+          git commit -m "📺 Updated RoxieStreams: Full Category Support & Mirrors ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+
+          # Random delay to reduce push collisions
+          sleep $((RANDOM % 10 + 5))
+
+          if ! git push origin main; then
+            git pull origin main --rebase
+            git push origin main
+          fi
