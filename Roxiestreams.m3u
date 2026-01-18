@@ -1,3 +1,5 @@
 #EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
-#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true" group-title="PPV Events",BKFC 86: LANE vs PAGUE
-https://601.alfirdaus.eu.org/ppv.m3u8
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true" group-title="Soccer",Tigres UANL vs Toluca
+https://601.alfirdaus.eu.org/chivas.m3u8
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true" group-title="Hockey",Los Angeles Kings vs Anaheim Ducks
+https://601.alfirdaus.eu.org/nhl13.m3u8
