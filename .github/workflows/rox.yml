@@ -20,11 +20,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 🌐 Install Chromium for rendering
+      - name: 🌐 Install dependencies & Chromium
         run: |
           sudo apt-get update
           sudo apt-get install -y libgbm-dev
-          python -m pip install requests-html
+          python -m pip install --upgrade pip
+          # We must install lxml_html_clean separately for requests-html to work
+          pip install requests-html lxml_html_clean
+          # Pre-download Chromium for the runner
           python -c "from requests_html import HTMLSession; session = HTMLSession(); session.browser"
 
       - name: 🎯 Run Scraper
