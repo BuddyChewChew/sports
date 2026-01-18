@@ -1,13 +1,14 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
+from requests.exceptions import RequestException
 import logging
 
-# Integrated Settings
 BASE_URL = "https://roxiestreams.live"
 EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
+# Enhanced Mapping: (EPG_ID, Logo_URL, Group_Name)
 TV_INFO = {
     "ppv": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/ppv2.png?raw=true", "PPV Events"),
     "soccer": ("Soccer.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/football.png?raw=true", "Soccer"),
@@ -15,94 +16,136 @@ TV_INFO = {
     "fighting": ("Combat.Sports.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/boxing.png?raw=true", "Combat Sports"),
     "nfl": ("Football.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nfl.png?raw=true", "Football"),
     "nhl": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/hockey.png?raw=true", "Hockey"),
+    "hockey": ("NHL.Hockey.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true", "Hockey"),
+    "f1": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports"),
+    "motorsports": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports"),
+    "wwe": ("PPV.EVENTS.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/wwe.png?raw=true", "Wrestling"),
     "nba": ("NBA.Basketball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nba.png?raw=true", "Basketball"),
-    "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true", "Baseball"),
-    "motorsports": ("Racing.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/f1.png?raw=true", "Motorsports")
+    "mlb": ("MLB.Baseball.Dummy.us", "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/baseball.png?raw=true", "Baseball")
 }
 
 DEFAULT_LOGO = "https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true"
+DEFAULT_GROUP = "General Sports"
+DISCOVERY_KEYWORDS = list(TV_INFO.keys()) + ['streams']
+SECTION_BLOCKLIST = ['olympia']
+
 SESSION = requests.Session()
 SESSION.headers.update({
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
     'Referer': BASE_URL
 })
 
 M3U8_REGEX = re.compile(r'https?://[^\s"\'<>`]+\.m3u8')
-logging.basicConfig(level=logging.INFO, format='%(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_tv_info(url, title=""):
-    combined = (url + title).lower()
+    """Determines logo, EPG ID, and Group Name by checking both URL and Event Title."""
+    combined_text = (url + title).lower()
     for key, (epg_id, logo, group) in TV_INFO.items():
-        if key in combined: return epg_id, logo, group
-    return "Sports.Rox.us", DEFAULT_LOGO, "General Sports"
+        if key in combined_text:
+            return epg_id, logo, group
+    return "Sports.Rox.us", DEFAULT_LOGO, DEFAULT_GROUP
 
-def extract_m3u8_deep(url):
-    """Scrapes the main page and follows common player patterns."""
+def discover_sections(base_url):
+    """Finds top-level categories like /nba, /nhl, etc."""
+    sections_found = []
+    try:
+        resp = SESSION.get(base_url, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        discovered_urls = set()
+        for a_tag in soup.find_all('a', href=True):
+            href = a_tag['href']
+            title = a_tag.get_text(strip=True)
+            if not href or href.startswith(('#', 'javascript:', 'mailto:')) or not title:
+                continue
+            abs_url = urljoin(base_url, href)
+            if any(blocked in abs_url.lower() for blocked in SECTION_BLOCKLIST):
+                continue
+            if (urlparse(abs_url).netloc == urlparse(base_url).netloc and
+                    any(keyword in abs_url.lower() for keyword in DISCOVERY_KEYWORDS)):
+                if abs_url not in discovered_urls:
+                    discovered_urls.add(abs_url)
+                    sections_found.append((abs_url, title))
+    except Exception as e:
+        logging.error(f"Discovery error: {e}")
+    return sections_found
+
+def discover_event_links(section_url):
+    """Finds individual event pages within a section."""
+    events = set()
+    try:
+        resp = SESSION.get(section_url, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        event_table = soup.find('table', id='eventsTable') 
+        if event_table:
+            for a_tag in event_table.find_all('a', href=True):
+                href = a_tag['href']
+                title = a_tag.get_text(strip=True)
+                if href and title:
+                    abs_url = urljoin(section_url, href)
+                    if abs_url.startswith(BASE_URL):
+                        events.add((abs_url, title))
+    except Exception:
+        pass
+    return events
+
+def extract_m3u8_links(page_url):
+    """Scrapes raw HTML for .m3u8 links."""
     links = set()
     try:
-        r = SESSION.get(url, timeout=10)
-        r.encoding = 'utf-8'
-        links.update(M3U8_REGEX.findall(r.text))
-        
-        soup = BeautifulSoup(r.text, 'html.parser')
-        
-        # Look for the mirror buttons/links and iframes
-        tags = soup.find_all(['iframe', 'a', 'source'], src=True) or soup.find_all('iframe')
-        
-        for tag in tags:
-            src = tag.get('src') or tag.get('href')
-            if not src: continue
-            
-            if any(x in src for x in ['alfirdaus', 'roxiestreams', 'embed', 'player', 'nfl-streams']):
-                target_url = urljoin(url, src)
-                try:
-                    # Avoid infinite loops on the same page
-                    if target_url != url:
-                        if_r = SESSION.get(target_url, timeout=5)
-                        links.update(M3U8_REGEX.findall(if_r.text))
-                except: continue
-    except: pass
+        resp = SESSION.get(page_url, timeout=10)
+        resp.raise_for_status()
+        links.update(M3U8_REGEX.findall(resp.text))
+    except Exception:
+        pass
     return links
 
+def check_stream_status(m3u8_url):
+    """Verifies link is active."""
+    try:
+        resp = SESSION.head(m3u8_url, timeout=5, allow_redirects=True)
+        return resp.status_code == 200
+    except Exception:
+        return False
+
 def main():
-    playlist = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
+    playlist_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
+    sections = discover_sections(BASE_URL)
+    
     seen_links = set()
-    event_pages = set()
+    title_tracker = {}
 
-    # Manual NFL priority scan based on your links
-    for i in range(1, 6):
-        event_pages.add((f"{BASE_URL}/nfl-streams-{i}", f"NFL Game Mirror {i}"))
+    for section_url, section_title in sections:
+        event_links = discover_event_links(section_url)
+        # If no sub-links, scrape the section page itself
+        pages = event_links if event_links else {(section_url, section_title)}
 
-    # Standard Category Scan
-    sections = [BASE_URL, f"{BASE_URL}/nfl", f"{BASE_URL}/nba", f"{BASE_URL}/soccer", f"{BASE_URL}/fighting"]
-    for sec in sections:
-        try:
-            r = SESSION.get(sec, timeout=10)
-            soup = BeautifulSoup(r.text, 'html.parser')
-            for a in soup.find_all('a', href=True):
-                href = a['href']
-                if any(x in href for x in ['/stream/', 'nfl-streams']):
-                    event_pages.add((urljoin(BASE_URL, href), a.get_text(strip=True) or "Live Event"))
-        except: continue
-
-    for url, title in event_pages:
-        m3u8s = extract_m3u8_deep(url)
-        mirror_count = 1
-        for link in m3u8s:
-            if link not in seen_links:
-                try:
-                    if SESSION.head(link, timeout=3).status_code == 200:
-                        eid, logo, grp = get_tv_info(url, title)
-                        display_name = title if mirror_count == 1 else f"{title} (Mirror {mirror_count})"
-                        playlist.append(f'#EXTINF:-1 tvg-id="{eid}" tvg-logo="{logo}" group-title="{grp}",{display_name}')
-                        playlist.append(link)
-                        seen_links.add(link)
-                        mirror_count += 1
-                        logging.info(f"Added: {display_name}")
-                except: pass
+        for event_url, event_title in pages:
+            # Now returns 3 items: ID, Logo, and the Group name
+            tv_id, logo, group_name = get_tv_info(event_url, event_title)
+            m3u8_links = extract_m3u8_links(event_url)
+            
+            for link in m3u8_links:
+                if link in seen_links:
+                    continue
+                
+                if check_stream_status(link):
+                    # Logic to identify and label mirrors
+                    title_tracker[event_title] = title_tracker.get(event_title, 0) + 1
+                    count = title_tracker[event_title]
+                    
+                    display_name = event_title if count == 1 else f"{event_title} (Mirror {count-1})"
+                    
+                    # group-title is now set to group_name instead of a hardcoded string
+                    playlist_lines.append(f'#EXTINF:-1 tvg-id="{tv_id}" tvg-logo="{logo}" group-title="{group_name}",{display_name}')
+                    playlist_lines.append(link)
+                    seen_links.add(link)
 
     with open("Roxiestreams.m3u", "w", encoding="utf-8") as f:
-        f.write("\n".join(playlist))
+        f.write("\n".join(playlist_lines))
+    logging.info(f"Playlist updated. Found {len(seen_links)} unique streams grouped by category.")
 
 if __name__ == "__main__":
     main()
