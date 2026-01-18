@@ -2,7 +2,7 @@ name: ▶️ Update RoxieStreams
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # ⏰ Runs every 30 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,6 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
@@ -21,27 +20,15 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 🌐 Install dependencies & Chromium
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgbm-dev
-          python -m pip install --upgrade pip
-          # Fix for lxml.html.clean error
-          pip install requests-html lxml_html_clean
-          # Force pre-download of Chromium
-          python -c "from requests_html import HTMLSession; session = HTMLSession(); session.browser"
+      - name: 📦 Install dependencies
+        run: pip install requests beautifulsoup4
 
-      - name: 🎯 Run RoxieStreams scraper
+      - name: 🎯 Run Scraper
         run: python rox.py
 
-      - name: 💾 Commit & Push if Playlist Changed
+      - name: 💾 Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add Roxiestreams.m3u
-          if git diff --cached --quiet; then
-            echo "No changes detected."
-          else
-            git commit -m "📺 Updated RoxieStreams: Home + Category Scan ($(date -u))"
-            git push
-          fi
+          git diff --quiet && git diff --staged --quiet || (git commit -m "📺 Updated Streams: All Categories" && git push)
