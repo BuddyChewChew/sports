@@ -1,9 +1,4 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
-#EXTINF:-1 tvg-chno="1" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball Euroleague] Virtus Bologna vs Fenerbahce 1 (FAWA)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Basketball Euroleague] Virtus Bologna vs Fenerbahce 1 (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/EDDDDQQ.m3u8
 #EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Brazil Carioca - Taca Guanabara] Botafogo RJ vs Volta Redonda (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Brazil Carioca - Taca Guanabara] Botafogo RJ vs Volta Redonda (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -49,11 +44,16 @@ http://37.49.225.198/hls/fccccq.m3u8
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://37.49.225.198/hls/fcccc.m3u8
-#EXTINF:-1 tvg-chno="75" tvg-id="Live.Event.us" tvg-name="[Handball EHF Euro] Sweden vs Croatia (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Handball EHF Euro] Sweden vs Croatia (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTINF:-1 tvg-chno="50" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Champions League] Bayern Munchen vs Union Saint-Gilloise (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[Europe UEFA Champions League] Bayern Munchen vs Union Saint-Gilloise (SPORT9)
+#EXTVLCOPT:http-referrer=https://vividmosaica.com/
+#EXTVLCOPT:http-origin=https://vividmosaica.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-http://37.49.225.198/hls/EDDDDQQQQ.m3u8
+https://d13.epicquesthero.com:999/hls/do7.m3u8?md5=YoTFXzE-ne6csCPvnPLNZQ&expires=1769038221
+#EXTINF:-1 tvg-chno="54" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Champions League] Olympique Marseille vs Liverpool (SPORT9)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[Europe UEFA Champions League] Olympique Marseille vs Liverpool (SPORT9)
+#EXTVLCOPT:http-referrer=https://vividmosaica.com/
+#EXTVLCOPT:http-origin=https://vividmosaica.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://d13.epicquesthero.com:999/hls/do1.m3u8?md5=d2SmWDsCjrQaEQqDbW8Mkw&expires=1769038212
 #EXTINF:-1 tvg-chno="79" tvg-id="Live.Event.us" tvg-name="[Live Event] Atalanta vs Athletic (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Atalanta vs Athletic (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/atalanta-v-athletic/97558/
 #EXTVLCOPT:http-origin=https://pawastreams.net/atalanta-v-athletic/97558/
@@ -239,11 +239,6 @@ https://pfl5.galaxaignite.space/playlist/43730/load-playlist
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+5&code=us&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn-live-tv.ru/api/v1/channels/us-paramount-event-5/index.m3u8?token=9031fe274c440b25e96623ef06ee1185680365222aff07da55417a75accc1289.1769023841.abab4f99167ee81c5a3b01b0164ca0d1.89cc8dd3963301fb77e17baf7440b803.35942a1d022d402bf20e1934cf3f06d2.7530bf43f69ec1b3
-#EXTINF:-1 tvg-chno="192" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Barcelona vs Slavia Praha (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[UEFA Champions League] Barcelona vs Slavia Praha (CDNTV)
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+8&code=us&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+8&code=us&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn-live-tv.ru/api/v1/channels/us-paramount-event-8/index.m3u8?token=2637b533166302c944996bc7812c7d978c70205e48a1e5e65910373467edf4d2.1769023845.f050e818ab526b85c9605390fc1a785c.e73bf52910df0c21a842c29b4a13c450.3189ce0d73850afea121b47f90250bee.fec241c4cce651fb
 #EXTINF:-1 tvg-chno="193" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Bayern Mnchen vs Union Saint-Gilloise (STRMBTW)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[UEFA Champions League] Bayern Mnchen vs Union Saint-Gilloise (STRMBTW)
 #EXTVLCOPT:http-referrer=https://streambtw.com/embed/soccer6.php
 #EXTVLCOPT:http-origin=https://streambtw.com/embed/soccer6.php
@@ -294,6 +289,11 @@ https://red5.boostaether.shop/playlist/43731/load-playlist
 #EXTVLCOPT:http-origin=https://storytrench.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://getbroadcast.click/hls/y1M7fzurUAHk/index.m3u8?st=ovOvmS06rDksQnceog5mAA&e=1769036475
+#EXTINF:-1 tvg-chno="218" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Liverpool vs Olympique Marseille (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[UEFA Champions League] Liverpool vs Olympique Marseille (CDNTV)
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+3&code=us&user=cdnlivetv&plan=free
+#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+3&code=us&user=cdnlivetv&plan=free
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn-live-tv.ru/api/v1/channels/us-paramount-event-3/index.m3u8?token=3faafb2447a55c2b54a4e648fc3729f155a391bf0b578b5f1ea8109e2887585a.1769023834.ac12500d4b6ccc8019a21deb96633198.8fa242352af6d2dd75e06d44dd6ce57a.9cca40136341728a517c31e5f0f76279.21dce44f052c5512
 #EXTINF:-1 tvg-chno="219" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Marseille vs Liverpool (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[UEFA Champions League] Marseille vs Liverpool (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -339,11 +339,6 @@ https://instreams.live/EU/HDTV2/index.m3u8?st=TGpURNkbdMk0nAR8791UPw&e=176903647
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+6&code=us&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn-live-tv.ru/api/v1/channels/us-paramount-event-6/index.m3u8?token=cafee75151193c97c30a2b74008a933d1f024da71dc16d24268b77140e4f9241.1769023843.3d408035c6a7e689317e989077fbee73.80e7b03ae051ceaa9191061ae33546aa.378b88240cc2d24bf7ab7a3e251a0285.12232665b1126948
-#EXTINF:-1 tvg-chno="237" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Paphos vs Chelsea (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[UEFA Champions League] Paphos vs Chelsea (CDNTV)
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+9&code=us&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=paramount+event+9&code=us&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn-live-tv.ru/api/v1/channels/us-paramount-event-9/index.m3u8?token=e98c50e3387eaeebc679d965ae8849d2f0717a742516ff83d0e5bcff274ed00c.1769023847.c035146ebb6d823d6c317ea89e93cd70.8282be79ef92a80eac2b8bb2810fcdc0.8d3d9694fe32c2a02a19bf5604d11a83.be9f11a37788814f
 #EXTINF:-1 tvg-chno="238" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Qarabag vs Eintracht Frankfurt (STRMBTW)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[UEFA Champions League] Qarabag vs Eintracht Frankfurt (STRMBTW)
 #EXTVLCOPT:http-referrer=https://streambtw.com/embed/soccer1.php
 #EXTVLCOPT:http-origin=https://streambtw.com/embed/soccer1.php
