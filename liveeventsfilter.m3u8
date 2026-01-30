@@ -1,9 +1,14 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Championship] Bristol City vs Derby County (iSTRMEAST)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="Live Events",[Championship] Bristol City vs Derby County (iSTRMEAST)
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[Boxing] Bryan Flores - Starling Castillo (EMBEDHD)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Boxing] Bryan Flores - Starling Castillo (EMBEDHD)
+#EXTVLCOPT:http-referrer=https://vividmosaica.com/
+#EXTVLCOPT:http-origin=https://vividmosaica.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://pfl2.orbitorbit.space/playlist/44265/load-playlist
+https://d13.epicquesthero.com:999/hls/mevent1.m3u8?md5=hoqivLhw26d9Qf8yUMMMAA&expires=1769819428
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[Chile Liga de Primera] U De Chile vs Audax Italiano (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Chile Liga de Primera] U De Chile vs Audax Italiano (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://205.237.104.40/hls/FUUUQ.m3u8
 #EXTINF:-1 tvg-chno="17" tvg-id="Live.Event.us" tvg-name="[Darts] Darts PDC World Masters 1 (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Darts] Darts PDC World Masters 1 (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
@@ -19,66 +24,76 @@ http://205.237.105.197/hls/IOIOIOQQQ.m3u8
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://a.swinapi.sbs/hls/kokokoQ.m3u8
-#EXTINF:-1 tvg-chno="29" tvg-id="Soccer.Dummy.us" tvg-name="[LaLiga] Espanyol vs Deportivo Alavés (iSTRMEAST)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[LaLiga] Espanyol vs Deportivo Alavés (iSTRMEAST)
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://pfl2.orbitorbit.space/playlist/44267/load-playlist
-#EXTINF:-1 tvg-chno="32" tvg-id="Live.Event.us" tvg-name="[Live Event] Al Kholood vs Al Nassr (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Al Kholood vs Al Nassr (PAWA)
+#EXTINF:-1 tvg-chno="31" tvg-id="Live.Event.us" tvg-name="[Live Event] Al Kholood vs Al Nassr (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Al Kholood vs Al Nassr (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/al-kholood-v-al-nassr/98174/
 #EXTVLCOPT:http-origin=https://pawastreams.net/al-kholood-v-al-nassr/98174/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/f2/index.m3u8
-#EXTINF:-1 tvg-chno="33" tvg-id="Live.Event.us" tvg-name="[Live Event] Bristol vs Derby (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Bristol vs Derby (PAWA)
+#EXTINF:-1 tvg-chno="32" tvg-id="Live.Event.us" tvg-name="[Live Event] Bristol vs Derby (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Bristol vs Derby (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/bristol-v-derby/98176/
 #EXTVLCOPT:http-origin=https://pawastreams.net/bristol-v-derby/98176/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/der/index.m3u8
-#EXTINF:-1 tvg-chno="34" tvg-id="Live.Event.us" tvg-name="[Live Event] Espanyol vs Alavés (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Espanyol vs Alavés (PAWA)
+#EXTINF:-1 tvg-chno="33" tvg-id="Live.Event.us" tvg-name="[Live Event] Espanyol vs Alavés (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Espanyol vs Alavés (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/espanyol-vs-alaves/98163/
 #EXTVLCOPT:http-origin=https://pawastreams.net/espanyol-vs-alaves/98163/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/L/index.m3u8
-#EXTINF:-1 tvg-chno="35" tvg-id="Live.Event.us" tvg-name="[Live Event] Köln vs Wolfsburg (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Köln vs Wolfsburg (PAWA)
+#EXTINF:-1 tvg-chno="34" tvg-id="Live.Event.us" tvg-name="[Live Event] Köln vs Wolfsburg (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Köln vs Wolfsburg (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/koln-vs-wolfsburg/98161/
 #EXTVLCOPT:http-origin=https://pawastreams.net/koln-vs-wolfsburg/98161/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/bun1/index.m3u8
-#EXTINF:-1 tvg-chno="36" tvg-id="Live.Event.us" tvg-name="[Live Event] Lazio vs Genoa (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Lazio vs Genoa (PAWA)
+#EXTINF:-1 tvg-chno="35" tvg-id="Live.Event.us" tvg-name="[Live Event] Lazio vs Genoa (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Lazio vs Genoa (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/lazio-vs-genoa/98162/
 #EXTVLCOPT:http-origin=https://pawastreams.net/lazio-vs-genoa/98162/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/ss/index.m3u8
-#EXTINF:-1 tvg-chno="37" tvg-id="Live.Event.us" tvg-name="[Live Event] Lens vs Le Havre (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Lens vs Le Havre (PAWA)
+#EXTINF:-1 tvg-chno="36" tvg-id="Live.Event.us" tvg-name="[Live Event] Lens vs Le Havre (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Lens vs Le Havre (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/lens-v-le-havre/98180/
 #EXTVLCOPT:http-origin=https://pawastreams.net/lens-v-le-havre/98180/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/bus/index.m3u8
-#EXTINF:-1 tvg-chno="38" tvg-id="Live.Event.us" tvg-name="[Live Event] Vitória vs Moreirense (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Vitória vs Moreirense (PAWA)
+#EXTINF:-1 tvg-chno="37" tvg-id="Live.Event.us" tvg-name="[Live Event] Vitória vs Moreirense (PAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Vitória vs Moreirense (PAWA)
 #EXTVLCOPT:http-referrer=https://pawastreams.net/vitoria-v-moreirense/98178/
 #EXTVLCOPT:http-origin=https://pawastreams.net/vitoria-v-moreirense/98178/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cd.tookit.shop:2053/storage/s1/index.m3u8
-#EXTINF:-1 tvg-chno="41" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Puebla vs Toluca (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Puebla vs Toluca (FAWA)
+#EXTINF:-1 tvg-chno="40" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Puebla vs Toluca (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Puebla vs Toluca (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://205.237.104.40/hls/FUUUQQQQ.m3u8
-#EXTINF:-1 tvg-chno="53" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA Basketball] Washington Wizards vs Los Angeles Lakers (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA Basketball] Washington Wizards vs Los Angeles Lakers (FAWA)
+#EXTINF:-1 tvg-chno="52" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA Basketball] Washington Wizards vs Los Angeles Lakers (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA Basketball] Washington Wizards vs Los Angeles Lakers (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://205.237.104.40/hls/JBBB.m3u8
-#EXTINF:-1 tvg-chno="62" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Detroit Pistons @ Golden State Warriors (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Detroit Pistons @ Golden State Warriors (TVPASS)
+#EXTINF:-1 tvg-chno="61" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Detroit Pistons @ Golden State Warriors (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Detroit Pistons @ Golden State Warriors (TVPASS)
 #EXTVLCOPT:http-referrer=https://tvpass.org
 #EXTVLCOPT:http-origin=https://tvpass.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://origin.thetvapp.to/hls/ESPN/mono.m3u8
-#EXTINF:-1 tvg-chno="70" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Los Angeles Lakers @ Washington Wizards (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Los Angeles Lakers @ Washington Wizards (TVPASS)
+#EXTINF:-1 tvg-chno="69" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Los Angeles Lakers @ Washington Wizards (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Los Angeles Lakers @ Washington Wizards (TVPASS)
 #EXTVLCOPT:http-referrer=https://tvpass.org
 #EXTVLCOPT:http-origin=https://tvpass.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://origin.thetvapp.to/hls/NBA01/mono.m3u8
+#EXTINF:-1 tvg-chno="72" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Los Angeles Lakers vs Washington Wizards (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Los Angeles Lakers vs Washington Wizards (CDNTV)
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=sport+klub+1&code=rs&user=cdnlivetv&plan=free
+#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=sport+klub+1&code=rs&user=cdnlivetv&plan=free
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn-live-tv.ru/api/v1/channels/rs-sport-klub-1/index.m3u8?token=85970906cafb8829179b0c0d38b00b4828e14644ac887c02ce44d80fd1e6c9c8.1769815836.ff6cd619abe7254b0508547abbad2b59.3973a468ecc2c56f081e8869b1135825.db1b9f5059c3929d96f9587822c53e7a.90a80d776e2099dd
+#EXTINF:-1 tvg-chno="74" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Memphis Grizzlies @ New Orleans Pelicans (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Memphis Grizzlies @ New Orleans Pelicans (TVPASS)
+#EXTVLCOPT:http-referrer=https://tvpass.org
+#EXTVLCOPT:http-origin=https://tvpass.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://origin.thetvapp.to/hls/NBA04/mono.m3u8
+#EXTINF:-1 tvg-chno="78" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Portland Trail Blazers @ New York Knicks (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Portland Trail Blazers @ New York Knicks (TVPASS)
+#EXTVLCOPT:http-referrer=https://tvpass.org
+#EXTVLCOPT:http-origin=https://tvpass.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://origin.thetvapp.to/hls/NBA05/mono.m3u8
 #EXTINF:-1 tvg-chno="82" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Sacramento Kings @ Boston Celtics (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Sacramento Kings @ Boston Celtics (TVPASS)
 #EXTVLCOPT:http-referrer=https://tvpass.org
 #EXTVLCOPT:http-origin=https://tvpass.org
@@ -89,43 +104,108 @@ http://origin.thetvapp.to/hls/NBA02/mono.m3u8
 #EXTVLCOPT:http-origin=https://tvpass.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://origin.thetvapp.to/hls/ESPN/mono.m3u8
-#EXTINF:-1 tvg-chno="90" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Niagara vs Siena (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Niagara vs Siena (iSTRMEAST)
+#EXTINF:-1 tvg-chno="91" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Washington Wizards vs Los Angeles Lakers (iSTRMEAST)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Washington Wizards vs Los Angeles Lakers (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://red2.pulselyra.shop/playlist/44282/load-playlist
+#EXTINF:-1 tvg-chno="92" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Akron vs Kent St. (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Akron vs Kent St. (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://red6.lumenglide.shop/playlist/44270/load-playlist
+#EXTINF:-1 tvg-chno="93" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Brown vs Harvard (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Brown vs Harvard (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pl8.astroignite.space/playlist/44279/load-playlist
+#EXTINF:-1 tvg-chno="94" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Canisius vs Marist (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Canisius vs Marist (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pfl6.ioniszenith.space/playlist/44286/load-playlist
+#EXTINF:-1 tvg-chno="95" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Charlotte vs Rice (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Charlotte vs Rice (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pfl6.ioniszenith.space/playlist/44274/load-playlist
+#EXTINF:-1 tvg-chno="96" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Columbia vs Pennsylvania (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Columbia vs Pennsylvania (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pfl7.zenithstellar.space/playlist/44276/load-playlist
+#EXTINF:-1 tvg-chno="97" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Cornell vs Princeton (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Cornell vs Princeton (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://red3.ignitestratos.shop/playlist/44271/load-playlist
+#EXTINF:-1 tvg-chno="98" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Detroit vs Northern Kentucky (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Detroit vs Northern Kentucky (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://red7.astrovortex.space/playlist/44281/load-playlist
+#EXTINF:-1 tvg-chno="99" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Iona vs Fairfield (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Iona vs Fairfield (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://red1.kamfir7.space/playlist/44278/load-playlist
+#EXTINF:-1 tvg-chno="100" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Manhattan vs Rider (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Manhattan vs Rider (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://red2.pulselyra.shop/playlist/44285/load-playlist
+#EXTINF:-1 tvg-chno="101" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Niagara vs Siena (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Niagara vs Siena (iSTRMEAST)
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://pfl5.galaxaignite.space/playlist/44273/load-playlist
-#EXTINF:-1 tvg-chno="91" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Youngstown St. vs IUPUI (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Youngstown St. vs IUPUI (iSTRMEAST)
+#EXTINF:-1 tvg-chno="102" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Quinnipiac vs Sacred Heart (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Quinnipiac vs Sacred Heart (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pfl6.ioniszenith.space/playlist/44280/load-playlist
+#EXTINF:-1 tvg-chno="103" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] UWGB vs Cleveland (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] UWGB vs Cleveland (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pl4.wecanfix5.space/playlist/44284/load-playlist
+#EXTINF:-1 tvg-chno="104" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Villanova vs Providence (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Villanova vs Providence (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pl1.kamfir8.space/playlist/44277/load-playlist
+#EXTINF:-1 tvg-chno="105" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Yale vs Dartmouth (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Yale vs Dartmouth (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://red1.wecanfix6.space/playlist/44283/load-playlist
+#EXTINF:-1 tvg-chno="106" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men] Youngstown St. vs IUPUI (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Men] Youngstown St. vs IUPUI (iSTRMEAST)
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://red4.voyagerover.shop/playlist/44272/load-playlist
-#EXTINF:-1 tvg-chno="92" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Women] Ole Miss Rebels vs Vanderbilt Commodores (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Women] Ole Miss Rebels vs Vanderbilt Commodores (iSTRMEAST)
+#EXTINF:-1 tvg-chno="107" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Women] Ole Miss Rebels vs Vanderbilt Commodores (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Women] Ole Miss Rebels vs Vanderbilt Commodores (iSTRMEAST)
 #EXTVLCOPT:http-referrer=https://gooz.aapmains.net
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://red1.ignitelaunch.shop/playlist/44268/load-playlist
-#EXTINF:-1 tvg-chno="95" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL Hockey] Chicago Blackhawks vs Columbus Blue Jackets (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL Hockey] Chicago Blackhawks vs Columbus Blue Jackets (FAWA)
+#EXTINF:-1 tvg-chno="108" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Women] Princeton Tigers vs Columbia Lions (iSTRMEAST)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="Live Events",[NCAA Women] Princeton Tigers vs Columbia Lions (iSTRMEAST)
+#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
+#EXTVLCOPT:http-origin=https://gooz.aapmains.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pl4.wecanfix5.space/playlist/44269/load-playlist
+#EXTINF:-1 tvg-chno="112" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL Hockey] Chicago Blackhawks vs Columbus Blue Jackets (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL Hockey] Chicago Blackhawks vs Columbus Blue Jackets (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://205.237.104.40/hls/JFFFQQQ.m3u8
-#EXTINF:-1 tvg-chno="96" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Columbus Blue Jackets @ Chicago Blackhawks (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Columbus Blue Jackets @ Chicago Blackhawks (TVPASS)
+#EXTINF:-1 tvg-chno="113" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Columbus Blue Jackets @ Chicago Blackhawks (TVPASS)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Columbus Blue Jackets @ Chicago Blackhawks (TVPASS)
 #EXTVLCOPT:http-referrer=https://tvpass.org
 #EXTVLCOPT:http-origin=https://tvpass.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 http://origin.thetvapp.to/hls/NHLNetwork/mono.m3u8
-#EXTINF:-1 tvg-chno="100" tvg-id="Live.Event.us" tvg-name="[Peru Liga 1 Apertura] Cajamarca vs Grau (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Peru Liga 1 Apertura] Cajamarca vs Grau (FAWA)
-#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
-#EXTVLCOPT:http-origin=http://www.fawanews.sc/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://a.voezvoezv.shop/hls/DGGG.m3u8
-#EXTINF:-1 tvg-chno="107" tvg-id="Soccer.Dummy.us" tvg-name="[Primeira Liga] Moreirense vs Vitória Guimarães (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Live Events",[Primeira Liga] Moreirense vs Vitória Guimarães (CDNTV)
+#EXTINF:-1 tvg-chno="121" tvg-id="Soccer.Dummy.us" tvg-name="[Primeira Liga] Moreirense vs Vitória Guimarães (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Live Events",[Primeira Liga] Moreirense vs Vitória Guimarães (CDNTV)
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=sport+tv+1&code=pt&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=sport+tv+1&code=pt&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://cdn-live-tv.ru/api/v1/channels/pt-sport-tv-1/index.m3u8?token=a15c28a44e7421282627dd2d10dd8266c0c01bad3f8e7f13fe67eb7ca799f048.1769805056.0802f082d22e8180dcd82105b16b3b95.f9dd3c31c802603f93a8e1c0066fea5b.4f6a1925c351db0aa79362c911453fff.ae44d16a88a7596f
-#EXTINF:-1 tvg-chno="113" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Lazio vs Genoa (iSTRMEAST)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Live Events",[Serie A] Lazio vs Genoa (iSTRMEAST)
-#EXTVLCOPT:http-referrer=https://gooz.aapmains.net
-#EXTVLCOPT:http-origin=https://gooz.aapmains.net
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://red4.voyagerover.shop/playlist/44266/load-playlist
