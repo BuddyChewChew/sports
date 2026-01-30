@@ -44,7 +44,7 @@ jobs:
             exit 0
           fi
           
-          git commit -m "Automated M3U Update with EPG tags: $(date)"
+          git commit -m "✅ Updated $(date)"
           
           # This is the fix: if the push is rejected, pull the latest changes 
           # from the other script and put our changes on top.
