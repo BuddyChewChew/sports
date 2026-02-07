@@ -274,6 +274,11 @@ http://195.178.110.25/hls/eiiiiqQQ.m3u8
 #EXTVLCOPT:http-origin=https://storytrench.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://broadcasthub.click//hls/9gSZoyFska/index.m3u8?st=J40s13UjC4XIamlhkZ2Q0A&e=1770503450
+#EXTINF:-1 tvg-chno="174" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] Monchengladbach vs Bayer Leverkusen HD (FAWA)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="Live Events",[German Bundesliga] Monchengladbach vs Bayer Leverkusen HD (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://live-en.aisports.cc/moviebox/bsy_020/playlist.m3u8
 #EXTINF:-1 tvg-chno="175" tvg-id="Live.Event.us" tvg-name="[Germany Bundesliga 2] Darmstadt 98 vs Kaiserslautern (SPORT9)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Germany Bundesliga 2] Darmstadt 98 vs Kaiserslautern (SPORT9)
 #EXTVLCOPT:http-referrer=https://vividmosaica.com/
 #EXTVLCOPT:http-origin=https://vividmosaica.com/
@@ -764,11 +769,6 @@ https://play.streameast.asia/playlist/stream_2.m3u8?md5=4hFK4JpTnKSwNvfsY8oPYA&e
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=bein+sports+max+6&code=fr&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://edge.cdn-live.ru/secure/api/v1/fr-bein-sports-max-6/playlist.m3u8?token=3c536c8d7a99cde072f4d2c126b8d8b3b3eea64e85d5034ad38ebfb0481508b0.1770494489.19a7e8b8c0085c3c94fbe7a83c43aaef.12281fc5a135e03504350c5ad0d803ff.67fc5a48ac90f28b0d3a1af14065d699&signature=ec8bef7ff46baece201133218730c94d28ac4aaf3ae92994cc79c1ab21cb8283
-#EXTINF:-1 tvg-chno="375" tvg-id="Soccer.Dummy.us" tvg-name="[Primera Division] Sport Huancayo vs Atlético Grau (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Primera Division] Sport Huancayo vs Atlético Grau (CDNTV)
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=sky+sport+bundesliga+6&code=de&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=sky+sport+bundesliga+6&code=de&user=cdnlivetv&plan=free
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://edge.cdn-live.ru/secure/api/v1/de-sky-sport-bundesliga-6/playlist.m3u8?token=6adf350342ccf91c3359851b31659ca8c58c51051df0550323be5b11fa865347.1770494476.3836737d4522052b3b04fdfbac739263.9ee103a5b483225ecf904f4506907111.e38e8effd0c16056ea6d1733104d66b6&signature=f69661eccc2dd668af7ce3158a5337bd780837af6eb956c336b7fcd875d222f4
 #EXTINF:-1 tvg-chno="376" tvg-id="Soccer.Dummy.us" tvg-name="[Primera División] Argentinos Juniors vs Racing Club (CDNTV)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Primera División] Argentinos Juniors vs Racing Club (CDNTV)
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/api/v1/channels/player/?name=premier+sports+1&code=gb&user=cdnlivetv&plan=free
 #EXTVLCOPT:http-origin=https://cdn-live.tv/api/v1/channels/player/?name=premier+sports+1&code=gb&user=cdnlivetv&plan=free
@@ -869,6 +869,16 @@ http://195.178.110.25/hls/TTTTIQQQ.m3u8
 #EXTVLCOPT:http-origin=https://vividmosaica.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://d14.epicquesthero.com:999/hls/do15.m3u8?md5=1M4nZqWH6JV2P5jqrfOTtg&expires=1770499868
+#EXTINF:-1 tvg-chno="426" tvg-id="Live.Event.us" tvg-name="[Switzerland Super League] Grasshoppers vs Young Boys (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Switzerland Super League] Grasshoppers vs Young Boys (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://q.sdvdsokvsdv.shop/hls/eiiiiqQQQ.m3u8
+#EXTINF:-1 tvg-chno="427" tvg-id="Live.Event.us" tvg-name="[Switzerland Super League] Grasshoppers vs Young Boys 2 (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Switzerland Super League] Grasshoppers vs Young Boys 2 (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://195.178.110.25/hls/eiiiiqQQQ.m3u8
 #EXTINF:-1 tvg-chno="431" tvg-id="Live.Event.us" tvg-name="[Uruguay Liga AUF] Progreso vs Central Esp (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Uruguay Liga AUF] Progreso vs Central Esp (FAWA)
 #EXTVLCOPT:http-referrer=http://www.fawanews.sc/
 #EXTVLCOPT:http-origin=http://www.fawanews.sc/
