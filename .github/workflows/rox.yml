@@ -45,7 +45,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "🔴 Updated ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git commit -m "✅ Updated ($(date -u +'%Y-%m-%d %H:%M UTC'))"
 
           # Random delay to reduce push collisions
           sleep $((RANDOM % 10 + 5))
