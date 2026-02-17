@@ -1,12 +1,12 @@
 #EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true" group-title="Hockey",Ice Hockey : Women's Semi-Final: TBA v TBA (TNT 4)
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/olympics.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true" group-title="Hockey",Ice Hockey : Women's Semi-Final: TBA v TBA (TNT 4) (Mirror 1)
-https://daffodil.xn--1000-ugoxe8a5a7g4h.com/tnt4.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true" group-title="Hockey",Ice Hockey : Women's Semi-Final: TBA v TBA (TNT 4) (Mirror 2)
+#EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",Ciao Cortina : Day 10 (TNT 2)
 https://daffodil.xn--1000-ugoxe8a5a7g4h.com/olympics.m3u8
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nhl.png?raw=true" group-title="Hockey",Ice Hockey : Women's Semi-Final: TBA v TBA (TNT 4) (Mirror 3)
+#EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",Ciao Cortina : Day 10 (TNT 2) (Mirror 1)
+https://daffodil.xn--1000-ugoxe8a5a7g4h.com/tnt4.m3u8
+#EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",Ciao Cortina : Day 10 (TNT 2) (Mirror 2)
 https://daffodil.xn--1000-ugoxe8a5a7g4h.com/nbc.m3u8
+#EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",Ciao Cortina : Day 10 (TNT 2) (Mirror 3)
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/olympics.m3u8
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nba.png?raw=true" group-title="Basketball",NBA All-Star Sunday
 https://daffodil.833577.xyz/nba.m3u8
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/nba.png?raw=true" group-title="Basketball",NBA All-Star Sunday (Mirror 1)
@@ -14,6 +14,6 @@ https://daffodil.833577.xyz/nbc.m3u8
 #EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",NASCAR Cup Series - Daytona
 https://dtmf21.b-cdn.net/docx/master.m3u8
 #EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",NASCAR Cup Series - Daytona (Mirror 1)
-https://601.833577.xyz/nas.m3u8
-#EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",NASCAR Cup Series - Daytona (Mirror 2)
 https://daffodil.833577.xyz/nascar.m3u8
+#EXTINF:-1 tvg-id="Sports.Rox.us" tvg-logo="https://github.com/BuddyChewChew/sports/blob/main/sports%20logos/default.png?raw=true" group-title="General Sports",NASCAR Cup Series - Daytona (Mirror 2)
+https://601.833577.xyz/nas.m3u8
