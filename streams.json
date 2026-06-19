@@ -57,6 +57,17 @@
                     ]
                 },
                 {
+                    "name": "DAZN",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=47"
+                    ],
+                    "number": 47,
+                    "language": "IT",
+                    "links": [
+                        "https://s2.kora.st/channel?id=47"
+                    ]
+                },
+                {
                     "name": "M6",
                     "oldLinks": [
                         "https://playfa.st/ch.php?id=56"
@@ -104,56 +115,6 @@
             "slug": "fifa-world-cup-football-usa-australia-2026-06-19-22-00",
             "startTimestamp": 1781895600000,
             "duration": 120
-        },
-        {
-            "matchText": "10:00 [MotoGP] Motorsport: Czech Republic Grand Prix [Tnt Sports 2 GB]",
-            "matchstr": "Czech Republic Grand Prix",
-            "time": "10:00",
-            "league": "MotoGP",
-            "sport": "Motorsport",
-            "team1": "Czech Republic Grand Prix",
-            "team2": null,
-            "channel": "Tnt Sports 2 GB",
-            "important": false,
-            "matchDate": "2026-06-19",
-            "channels": [
-                {
-                    "name": "Tnt Sports 2",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=2"
-                    ],
-                    "number": 2,
-                    "language": "GB",
-                    "links": [
-                        "https://s2.kora.st/channel?id=2"
-                    ]
-                },
-                {
-                    "name": "Sky Sport MIX",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=12"
-                    ],
-                    "number": 12,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=12"
-                    ]
-                },
-                {
-                    "name": "DAZN MotoGP",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=30"
-                    ],
-                    "number": 30,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=30"
-                    ]
-                }
-            ],
-            "slug": "motogp-motorsport-czech-republic-grand-prix-2026-06-19-10-00",
-            "startTimestamp": 1781852400000,
-            "duration": 400
         },
         {
             "matchText": "22:05 [France TOP 14] Rugby: Toulouse vs Racing 92 [Premier Sports 2 GB]",
@@ -232,34 +193,6 @@
             "slug": "bbl-basketball-fc-bayern-munchen-alba-berlin-2026-06-19-21-30",
             "startTimestamp": 1781893800000,
             "duration": 120
-        },
-        {
-            "matchText": "16:30 [One] MMA: One Friday Fights [beIN Sport US]",
-            "matchstr": "One Friday Fights",
-            "time": "16:30",
-            "league": "One",
-            "sport": "MMA",
-            "team1": "One Friday Fights",
-            "team2": null,
-            "channel": "beIN Sport US",
-            "important": false,
-            "matchDate": "2026-06-19",
-            "channels": [
-                {
-                    "name": "beIN Sport",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=39"
-                    ],
-                    "number": 39,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=39"
-                    ]
-                }
-            ],
-            "slug": "one-mma-one-friday-fights-2026-06-19-16-30",
-            "startTimestamp": 1781875800000,
-            "duration": 180
         },
         {
             "matchText": "22:00 [Indy NXT Series] Motorsport: Road America Grand Prix [Fox Sports 1 US]",
