@@ -1,135 +1,19 @@
 {
     "matches": [
         {
-            "matchText": "03:30 [FIFA World Cup] Brazil vs Haiti [ITV 1 GB]",
-            "matchstr": "Brazil vs Haiti",
-            "time": "03:30",
+            "matchText": "20:00 [FIFA World Cup] Netherlands vs Sweden [BBC One GB]",
+            "matchstr": "Netherlands vs Sweden",
+            "time": "20:00",
             "league": "FIFA World Cup",
             "sport": "Football",
-            "team1": "Brazil",
-            "team2": "Haiti",
-            "channel": "ITV 1 GB",
+            "team1": "Netherlands",
+            "team2": "Sweden",
+            "channel": "BBC One GB",
             "important": false,
             "matchDate": "2026-06-20",
             "channels": [
                 {
-                    "name": "ITV 1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=1"
-                    ],
-                    "number": 1,
-                    "language": "GB",
-                    "links": [
-                        "https://s2.kora.st/channel?id=1"
-                    ]
-                },
-                {
-                    "name": "MagentaTV",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=11"
-                    ],
-                    "number": 11,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=11"
-                    ]
-                },
-                {
-                    "name": "TSN4",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=34"
-                    ],
-                    "number": 34,
-                    "language": "CA",
-                    "links": [
-                        "https://s2.kora.st/channel?id=34"
-                    ]
-                },
-                {
-                    "name": "DAZN",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=47"
-                    ],
-                    "number": 47,
-                    "language": "IT",
-                    "links": [
-                        "https://s2.kora.st/channel?id=47"
-                    ]
-                },
-                {
-                    "name": "beIN Sports 1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=51"
-                    ],
-                    "number": 51,
-                    "language": "FR",
-                    "links": [
-                        "https://s2.kora.st/channel?id=51"
-                    ]
-                },
-                {
-                    "name": "TVP Sport",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=60"
-                    ],
-                    "number": 60,
-                    "language": "PL",
-                    "links": [
-                        "https://s2.kora.st/channel?id=60"
-                    ]
-                },
-                {
-                    "name": "HRT 2",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=70"
-                    ],
-                    "number": 70,
-                    "language": "HR",
-                    "links": [
-                        "https://s2.kora.st/channel?id=70"
-                    ]
-                },
-                {
-                    "name": "TV4",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=74"
-                    ],
-                    "number": 74,
-                    "language": "SE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=74"
-                    ]
-                },
-                {
-                    "name": "DAZN Mundial",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=100"
-                    ],
-                    "number": 100,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=100"
-                    ]
-                }
-            ],
-            "slug": "fifa-world-cup-football-brazil-haiti-2026-06-20-03-30",
-            "startTimestamp": 1781915400000,
-            "duration": 120
-        },
-        {
-            "matchText": "06:00 [FIFA World Cup] Turkey vs Paraguay [ITV 1 GB]",
-            "matchstr": "Turkey vs Paraguay",
-            "time": "06:00",
-            "league": "FIFA World Cup",
-            "sport": "Football",
-            "team1": "Turkey",
-            "team2": "Paraguay",
-            "channel": "ITV 1 GB",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "ITV 1",
+                    "name": "BBC One",
                     "oldLinks": [
                         "https://playfa.st/ch.php?id=1"
                     ],
@@ -159,112 +43,6 @@
                     "language": "CA",
                     "links": [
                         "https://s2.kora.st/channel?id=31"
-                    ]
-                },
-                {
-                    "name": "DAZN",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=47"
-                    ],
-                    "number": 47,
-                    "language": "IT",
-                    "links": [
-                        "https://s2.kora.st/channel?id=47"
-                    ]
-                },
-                {
-                    "name": "beIN Sports 1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=51"
-                    ],
-                    "number": 51,
-                    "language": "FR",
-                    "links": [
-                        "https://s2.kora.st/channel?id=51"
-                    ]
-                },
-                {
-                    "name": "TVP Sport",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=60"
-                    ],
-                    "number": 60,
-                    "language": "PL",
-                    "links": [
-                        "https://s2.kora.st/channel?id=60"
-                    ]
-                },
-                {
-                    "name": "HRT 2",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=70"
-                    ],
-                    "number": 70,
-                    "language": "HR",
-                    "links": [
-                        "https://s2.kora.st/channel?id=70"
-                    ]
-                },
-                {
-                    "name": "TV4",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=74"
-                    ],
-                    "number": 74,
-                    "language": "SE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=74"
-                    ]
-                },
-                {
-                    "name": "DAZN Mundial",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=100"
-                    ],
-                    "number": 100,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=100"
-                    ]
-                }
-            ],
-            "slug": "fifa-world-cup-football-turkey-paraguay-2026-06-20-06-00",
-            "startTimestamp": 1781924400000,
-            "duration": 120
-        },
-        {
-            "matchText": "20:00 [FIFA World Cup] Netherlands vs Sweden [TSN1 CA]",
-            "matchstr": "Netherlands vs Sweden",
-            "time": "20:00",
-            "league": "FIFA World Cup",
-            "sport": "Football",
-            "team1": "Netherlands",
-            "team2": "Sweden",
-            "channel": "TSN1 CA",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "TSN1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=1",
-                        "https://playfa.st/ch.php?id=31"
-                    ],
-                    "number": 1,
-                    "language": "CA",
-                    "links": [
-                        "https://s2.kora.st/channel?id=1"
-                    ]
-                },
-                {
-                    "name": "MagentaTV",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=11"
-                    ],
-                    "number": 11,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=11"
                     ]
                 },
                 {
@@ -650,34 +428,6 @@
             "duration": 180
         },
         {
-            "matchText": "04:00 [Bare Knuckle Fighting] MMA: BKFC Fight Night [Fight Network US]",
-            "matchstr": "BKFC Fight Night",
-            "time": "04:00",
-            "league": "Bare Knuckle Fighting",
-            "sport": "MMA",
-            "team1": "BKFC Fight Night",
-            "team2": null,
-            "channel": "Fight Network US",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Fight Network",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=7"
-                    ],
-                    "number": 7,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=7"
-                    ]
-                }
-            ],
-            "slug": "bare-knuckle-fighting-mma-bkfc-fight-night-2026-06-20-04-00",
-            "startTimestamp": 1781917200000,
-            "duration": 180
-        },
-        {
             "matchText": "22:00 [WNBA] Basketball: Phoenix Mercury W vs Seattle Storm W [ABC US]",
             "matchstr": "Phoenix Mercury W vs Seattle Storm W",
             "time": "22:00",
@@ -896,34 +646,6 @@
             "duration": 120
         },
         {
-            "matchText": "02:30 [CFL] Canadian Football: BC Lions vs Hamilton Tiger vs Cats [TSN3 CA]",
-            "matchstr": "BC Lions vs Hamilton Tiger vs Cats",
-            "time": "02:30",
-            "league": "CFL",
-            "sport": "Canadian Football",
-            "team1": "BC Lions",
-            "team2": "Hamilton Tiger vs Cats",
-            "channel": "TSN3 CA",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "TSN3",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=33"
-                    ],
-                    "number": 33,
-                    "language": "CA",
-                    "links": [
-                        "https://s2.kora.st/channel?id=33"
-                    ]
-                }
-            ],
-            "slug": "cfl-canadian-football-bc-lions-hamilton-tiger-vs-cats-2026-06-20-02-30",
-            "startTimestamp": 1781911800000,
-            "duration": 180
-        },
-        {
             "matchText": "20:00 [CFL] Canadian Football: Toronto Argonauts vs Ottawa RedBlacks [TSN3 CA]",
             "matchstr": "Toronto Argonauts vs Ottawa RedBlacks",
             "time": "20:00",
@@ -1092,62 +814,6 @@
             "duration": 180
         },
         {
-            "matchText": "02:00 [NASCAR Craftsman Truck Series] Motorsport: Navy 250 [Fox Sports 1 US]",
-            "matchstr": "Navy 250",
-            "time": "02:00",
-            "league": "NASCAR Craftsman Truck Series",
-            "sport": "Motorsport",
-            "team1": "Navy 250",
-            "team2": null,
-            "channel": "Fox Sports 1 US",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Fox Sports 1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=81"
-                    ],
-                    "number": 81,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=81"
-                    ]
-                }
-            ],
-            "slug": "nascar-craftsman-truck-series-motorsport-navy-250-2026-06-20-02-00",
-            "startTimestamp": 1781910000000,
-            "duration": 120
-        },
-        {
-            "matchText": "05:00 [Indy NXT Series] Motorsport: Road America Grand Prix [Fox Sports 1 US]",
-            "matchstr": "Road America Grand Prix",
-            "time": "05:00",
-            "league": "Indy NXT Series",
-            "sport": "Motorsport",
-            "team1": "Road America Grand Prix",
-            "team2": null,
-            "channel": "Fox Sports 1 US",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Fox Sports 1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=81"
-                    ],
-                    "number": 81,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=81"
-                    ]
-                }
-            ],
-            "slug": "indy-nxt-series-motorsport-road-america-grand-prix-2026-06-20-05-00",
-            "startTimestamp": 1781920800000,
-            "duration": 120
-        },
-        {
             "matchText": "18:00 [IndyCar] Motorsport: Road America Grand Prix [Fox Sports 1 US]",
             "matchstr": "Road America Grand Prix",
             "time": "18:00",
@@ -1313,62 +979,6 @@
             ],
             "slug": "afl-australian-football-port-adelaide-power-collingwood-magpies-2026-06-20-12-35",
             "startTimestamp": 1781948100000,
-            "duration": 180
-        },
-        {
-            "matchText": "02:30 [Prelims] MMA: Andrew Stewart vs Zayne Havener [ESPN Deportes ES]",
-            "matchstr": "Andrew Stewart vs Zayne Havener",
-            "time": "02:30",
-            "league": "Prelims",
-            "sport": "MMA",
-            "team1": "Andrew Stewart",
-            "team2": "Zayne Havener",
-            "channel": "ESPN Deportes ES",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "ESPN Deportes",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=86"
-                    ],
-                    "number": 86,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=86"
-                    ]
-                }
-            ],
-            "slug": "prelims-mma-andrew-stewart-zayne-havener-2026-06-20-02-30",
-            "startTimestamp": 1781911800000,
-            "duration": 180
-        },
-        {
-            "matchText": "04:00 [Main Cards] MMA: Andrew Stewart vs Zayne Havener [ESPN Deportes ES]",
-            "matchstr": "Andrew Stewart vs Zayne Havener",
-            "time": "04:00",
-            "league": "Main Cards",
-            "sport": "MMA",
-            "team1": "Andrew Stewart",
-            "team2": "Zayne Havener",
-            "channel": "ESPN Deportes ES",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "ESPN Deportes",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=86"
-                    ],
-                    "number": 86,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=86"
-                    ]
-                }
-            ],
-            "slug": "main-cards-mma-andrew-stewart-zayne-havener-2026-06-20-04-00",
-            "startTimestamp": 1781917200000,
             "duration": 180
         },
         {
