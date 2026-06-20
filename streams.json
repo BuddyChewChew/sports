@@ -1,133 +1,6 @@
 {
     "matches": [
         {
-            "matchText": "20:00 [FIFA World Cup] Netherlands vs Sweden [BBC One GB]",
-            "matchstr": "Netherlands vs Sweden",
-            "time": "20:00",
-            "league": "FIFA World Cup",
-            "sport": "Football",
-            "team1": "Netherlands",
-            "team2": "Sweden",
-            "channel": "BBC One GB",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "BBC One",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=1"
-                    ],
-                    "number": 1,
-                    "language": "GB",
-                    "links": [
-                        "https://s2.kora.st/channel?id=1"
-                    ]
-                },
-                {
-                    "name": "MagentaTV",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=11"
-                    ],
-                    "number": 11,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=11"
-                    ]
-                },
-                {
-                    "name": "TSN1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=31"
-                    ],
-                    "number": 31,
-                    "language": "CA",
-                    "links": [
-                        "https://s2.kora.st/channel?id=31"
-                    ]
-                },
-                {
-                    "name": "DAZN",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=47"
-                    ],
-                    "number": 47,
-                    "language": "IT",
-                    "links": [
-                        "https://s2.kora.st/channel?id=47"
-                    ]
-                },
-                {
-                    "name": "M6",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=56"
-                    ],
-                    "number": 56,
-                    "language": "FR",
-                    "links": [
-                        "https://s2.kora.st/channel?id=56"
-                    ]
-                },
-                {
-                    "name": "TVP Sport",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=60"
-                    ],
-                    "number": 60,
-                    "language": "PL",
-                    "links": [
-                        "https://s2.kora.st/channel?id=60"
-                    ]
-                },
-                {
-                    "name": "HRT 2",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=70"
-                    ],
-                    "number": 70,
-                    "language": "HR",
-                    "links": [
-                        "https://s2.kora.st/channel?id=70"
-                    ]
-                },
-                {
-                    "name": "TV4",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=74"
-                    ],
-                    "number": 74,
-                    "language": "SE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=74"
-                    ]
-                },
-                {
-                    "name": "NPO 1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=88"
-                    ],
-                    "number": 88,
-                    "language": "NL",
-                    "links": [
-                        "https://s2.kora.st/channel?id=88"
-                    ]
-                },
-                {
-                    "name": "DAZN Mundial",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=100"
-                    ],
-                    "number": 100,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=100"
-                    ]
-                }
-            ],
-            "slug": "fifa-world-cup-football-netherlands-sweden-2026-06-20-20-00",
-            "startTimestamp": 1781974800000,
-            "duration": 120
-        },
-        {
             "matchText": "23:00 [FIFA World Cup] Germany vs C\u00f4te d'Ivoire [ITV 1 GB]",
             "matchstr": "Germany vs C\u00f4te d'Ivoire",
             "time": "23:00",
@@ -322,34 +195,6 @@
             "duration": 180
         },
         {
-            "matchText": "19:00 [Prelims] Boxing: Ryan Garner vs Michael Magnesi [DAZN US]",
-            "matchstr": "Ryan Garner vs Michael Magnesi",
-            "time": "19:00",
-            "league": "Prelims",
-            "sport": "Boxing",
-            "team1": "Ryan Garner",
-            "team2": "Michael Magnesi",
-            "channel": "DAZN US",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "DAZN",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=6"
-                    ],
-                    "number": 6,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=6"
-                    ]
-                }
-            ],
-            "slug": "prelims-boxing-ryan-garner-michael-magnesi-2026-06-20-19-00",
-            "startTimestamp": 1781971200000,
-            "duration": 180
-        },
-        {
             "matchText": "22:00 [WNBA] Basketball: Phoenix Mercury W vs Seattle Storm W [ABC US]",
             "matchstr": "Phoenix Mercury W vs Seattle Storm W",
             "time": "22:00",
@@ -376,34 +221,6 @@
             "slug": "wnba-basketball-phoenix-mercury-w-seattle-storm-w-2026-06-20-22-00",
             "startTimestamp": 1781982000000,
             "duration": 120
-        },
-        {
-            "matchText": "18:25 [Oktagon] MMA: Oktagon MMA [Sky Sport Mix DE]",
-            "matchstr": "Oktagon MMA",
-            "time": "18:25",
-            "league": "Oktagon",
-            "sport": "MMA",
-            "team1": "Oktagon MMA",
-            "team2": null,
-            "channel": "Sky Sport Mix DE",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Sky Sport Mix",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=12"
-                    ],
-                    "number": 12,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=12"
-                    ]
-                }
-            ],
-            "slug": "oktagon-mma-oktagon-mma-2026-06-20-18-25",
-            "startTimestamp": 1781969100000,
-            "duration": 180
         },
         {
             "matchText": "20:10 [MLB] Baseball: Detroit Tigers VS Chicago White Sox [Sportdigital1+ DE]",
