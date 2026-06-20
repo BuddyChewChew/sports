@@ -596,34 +596,6 @@
             "duration": 180
         },
         {
-            "matchText": "17:00 [Premiership Rugby] Rugby: Exeter Chiefs vs Northampton Saints [Sportsnet World CA]",
-            "matchstr": "Exeter Chiefs vs Northampton Saints",
-            "time": "17:00",
-            "league": "Premiership Rugby",
-            "sport": "Rugby",
-            "team1": "Exeter Chiefs",
-            "team2": "Northampton Saints",
-            "channel": "Sportsnet World CA",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Sportsnet World",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=35"
-                    ],
-                    "number": 35,
-                    "language": "CA",
-                    "links": [
-                        "https://s2.kora.st/channel?id=35"
-                    ]
-                }
-            ],
-            "slug": "premiership-rugby-rugby-exeter-chiefs-northampton-saints-2026-06-20-17-00",
-            "startTimestamp": 1781964000000,
-            "duration": 120
-        },
-        {
             "matchText": "23:30 [Cage Warriors] MMA: Omiel Brown vs Ieuan Davies [RMC Sport 1 FR]",
             "matchstr": "Omiel Brown vs Ieuan Davies",
             "time": "23:30",
@@ -678,34 +650,6 @@
             "slug": "pdc-european-tour-darts-slovak-darts-open-2026-06-20-20-00",
             "startTimestamp": 1781974800000,
             "duration": 180
-        },
-        {
-            "matchText": "18:00 [IndyCar] Motorsport: Road America Grand Prix [Fox Sports 1 US]",
-            "matchstr": "Road America Grand Prix",
-            "time": "18:00",
-            "league": "IndyCar",
-            "sport": "Motorsport",
-            "team1": "Road America Grand Prix",
-            "team2": null,
-            "channel": "Fox Sports 1 US",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Fox Sports 1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=81"
-                    ],
-                    "number": 81,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=81"
-                    ]
-                }
-            ],
-            "slug": "indycar-motorsport-road-america-grand-prix-2026-06-20-18-00",
-            "startTimestamp": 1781967600000,
-            "duration": 120
         },
         {
             "matchText": "21:00 [IndyCar] Motorsport: Road America Grand Prix [Fox Sports 1 US]",
