@@ -244,56 +244,6 @@
             "duration": 120
         },
         {
-            "matchText": "09:40 [MotoGP] Motorsport: Czech Republic Grand Prix [TNT Sports 2 GB]",
-            "matchstr": "Czech Republic Grand Prix",
-            "time": "09:40",
-            "league": "MotoGP",
-            "sport": "Motorsport",
-            "team1": "Czech Republic Grand Prix",
-            "team2": null,
-            "channel": "TNT Sports 2 GB",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "TNT Sports 2",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=2"
-                    ],
-                    "number": 2,
-                    "language": "GB",
-                    "links": [
-                        "https://s2.kora.st/channel?id=2"
-                    ]
-                },
-                {
-                    "name": "Sky Sport Mix",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=12"
-                    ],
-                    "number": 12,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=12"
-                    ]
-                },
-                {
-                    "name": "DAZN MotoGP",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=30"
-                    ],
-                    "number": 30,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=30"
-                    ]
-                }
-            ],
-            "slug": "motogp-motorsport-czech-republic-grand-prix-2026-06-20-09-40",
-            "startTimestamp": 1781937600000,
-            "duration": 400
-        },
-        {
             "matchText": "22:05 [France TOP 14] Rugby: Montpellier vs Stade Fran\u00e7ais [Premier Sports 1 GB]",
             "matchstr": "Montpellier vs Stade Fran\u00e7ais",
             "time": "22:05",
@@ -341,34 +291,6 @@
             ],
             "slug": "france-top-14-rugby-montpellier-stade-francais-2026-06-20-22-05",
             "startTimestamp": 1781982300000,
-            "duration": 120
-        },
-        {
-            "matchText": "16:00 [Rugby Union Friendly] Rugby: Barbarians vs South Africa [Premier Sports 2 GB]",
-            "matchstr": "Barbarians vs South Africa",
-            "time": "16:00",
-            "league": "Rugby Union Friendly",
-            "sport": "Rugby",
-            "team1": "Barbarians",
-            "team2": "South Africa",
-            "channel": "Premier Sports 2 GB",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Premier Sports 2",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=3"
-                    ],
-                    "number": 3,
-                    "language": "GB",
-                    "links": [
-                        "https://s2.kora.st/channel?id=3"
-                    ]
-                }
-            ],
-            "slug": "rugby-union-friendly-rugby-barbarians-south-africa-2026-06-20-16-00",
-            "startTimestamp": 1781960400000,
             "duration": 120
         },
         {
@@ -730,34 +652,6 @@
             "duration": 180
         },
         {
-            "matchText": "14:00 [PDC European Tour] Darts: Slovak Darts Open [TV3 Sport DK]",
-            "matchstr": "Slovak Darts Open",
-            "time": "14:00",
-            "league": "PDC European Tour",
-            "sport": "Darts",
-            "team1": "Slovak Darts Open",
-            "team2": null,
-            "channel": "TV3 Sport DK",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "TV3 Sport",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=68"
-                    ],
-                    "number": 68,
-                    "language": "DK",
-                    "links": [
-                        "https://s2.kora.st/channel?id=68"
-                    ]
-                }
-            ],
-            "slug": "pdc-european-tour-darts-slovak-darts-open-2026-06-20-14-00",
-            "startTimestamp": 1781953200000,
-            "duration": 180
-        },
-        {
             "matchText": "20:00 [PDC European Tour] Darts: Slovak Darts Open [TV3 Sport DK]",
             "matchstr": "Slovak Darts Open",
             "time": "20:00",
@@ -840,34 +734,6 @@
             "slug": "indycar-motorsport-road-america-grand-prix-2026-06-20-21-00",
             "startTimestamp": 1781978400000,
             "duration": 120
-        },
-        {
-            "matchText": "12:35 [AFL] Australian Football: Port Adelaide Power vs Collingwood Magpies [Fox Soccer Plus US]",
-            "matchstr": "Port Adelaide Power vs Collingwood Magpies",
-            "time": "12:35",
-            "league": "AFL",
-            "sport": "Australian Football",
-            "team1": "Port Adelaide Power",
-            "team2": "Collingwood Magpies",
-            "channel": "Fox Soccer Plus US",
-            "important": false,
-            "matchDate": "2026-06-20",
-            "channels": [
-                {
-                    "name": "Fox Soccer Plus",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=83"
-                    ],
-                    "number": 83,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=83"
-                    ]
-                }
-            ],
-            "slug": "afl-australian-football-port-adelaide-power-collingwood-magpies-2026-06-20-12-35",
-            "startTimestamp": 1781948100000,
-            "duration": 180
         },
         {
             "matchText": "03:00 [FIFA World Cup] Ecuador vs Cura\u00e7ao [BBC One GB]",
