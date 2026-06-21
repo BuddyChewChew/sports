@@ -283,34 +283,6 @@
             "duration": 120
         },
         {
-            "matchText": "17:00 [Motocross World Championship] Motorsport: MX2 [CBS Sports Network US]",
-            "matchstr": "MX2",
-            "time": "17:00",
-            "league": "Motocross World Championship",
-            "sport": "Motorsport",
-            "team1": "MX2",
-            "team2": null,
-            "channel": "CBS Sports Network US",
-            "important": false,
-            "matchDate": "2026-06-21",
-            "channels": [
-                {
-                    "name": "CBS Sports Network",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=8"
-                    ],
-                    "number": 8,
-                    "language": "US",
-                    "links": [
-                        "https://s2.kora.st/channel?id=8"
-                    ]
-                }
-            ],
-            "slug": "motocross-world-championship-motorsport-mx2-2026-06-21-17-00",
-            "startTimestamp": 1782050400000,
-            "duration": 120
-        },
-        {
             "matchText": "18:00 [Motocross World Championship] Motorsport: MXGP [CBS Sports Network US]",
             "matchstr": "MXGP",
             "time": "18:00",
@@ -336,34 +308,6 @@
             ],
             "slug": "motocross-world-championship-motorsport-mxgp-2026-06-21-18-00",
             "startTimestamp": 1782054000000,
-            "duration": 120
-        },
-        {
-            "matchText": "16:05 [ADAC GT4 Germany] Motorsport: Lausitzring [Sport1 DE]",
-            "matchstr": "Lausitzring",
-            "time": "16:05",
-            "league": "ADAC GT4 Germany",
-            "sport": "Motorsport",
-            "team1": "Lausitzring",
-            "team2": null,
-            "channel": "Sport1 DE",
-            "important": false,
-            "matchDate": "2026-06-21",
-            "channels": [
-                {
-                    "name": "Sport1",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=13"
-                    ],
-                    "number": 13,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=13"
-                    ]
-                }
-            ],
-            "slug": "adac-gt4-germany-motorsport-lausitzring-2026-06-21-16-05",
-            "startTimestamp": 1782047100000,
             "duration": 120
         },
         {
@@ -395,34 +339,6 @@
             "duration": 120
         },
         {
-            "matchText": "17:00 [Norway OBOS-ligaen] Kongsvinger vs Str\u00f8msgodset [TV2 Sport NO]",
-            "matchstr": "Kongsvinger vs Str\u00f8msgodset",
-            "time": "17:00",
-            "league": "Norway OBOS-ligaen",
-            "sport": "Football",
-            "team1": "Kongsvinger",
-            "team2": "Str\u00f8msgodset",
-            "channel": "TV2 Sport NO",
-            "important": false,
-            "matchDate": "2026-06-21",
-            "channels": [
-                {
-                    "name": "TV2 Sport",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=67"
-                    ],
-                    "number": 67,
-                    "language": "NO",
-                    "links": [
-                        "https://s2.kora.st/channel?id=67"
-                    ]
-                }
-            ],
-            "slug": "norway-obos-ligaen-football-kongsvinger-stromsgodset-2026-06-21-17-00",
-            "startTimestamp": 1782050400000,
-            "duration": 120
-        },
-        {
             "matchText": "18:00 [Sweden Superettan] \u00d6stersunds FK vs Norrk\u00f6ping [TV4 Fotball SE]",
             "matchstr": "\u00d6stersunds FK vs Norrk\u00f6ping",
             "time": "18:00",
@@ -448,34 +364,6 @@
             ],
             "slug": "sweden-superettan-football-ostersunds-fk-norrkoping-2026-06-21-18-00",
             "startTimestamp": 1782054000000,
-            "duration": 120
-        },
-        {
-            "matchText": "16:00 [Sweden Superettan] Helsingborg vs GIF Sundsvall [TV4 Sportkanalen SE]",
-            "matchstr": "Helsingborg vs GIF Sundsvall",
-            "time": "16:00",
-            "league": "Sweden Superettan",
-            "sport": "Football",
-            "team1": "Helsingborg",
-            "team2": "GIF Sundsvall",
-            "channel": "TV4 Sportkanalen SE",
-            "important": false,
-            "matchDate": "2026-06-21",
-            "channels": [
-                {
-                    "name": "TV4 Sportkanalen",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=76"
-                    ],
-                    "number": 76,
-                    "language": "SE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=76"
-                    ]
-                }
-            ],
-            "slug": "sweden-superettan-football-helsingborg-gif-sundsvall-2026-06-21-16-00",
-            "startTimestamp": 1782046800000,
             "duration": 120
         },
         {
@@ -1710,6 +1598,476 @@
             ],
             "slug": "wnba-basketball-phoenix-mercury-indiana-fever-2026-06-23-03-00",
             "startTimestamp": 1782172800000,
+            "duration": 120
+        },
+        {
+            "matchText": "02:00 [FIFA World Cup] Panama vs Croatia [BBC One GB]",
+            "matchstr": "Panama vs Croatia",
+            "time": "02:00",
+            "league": "FIFA World Cup",
+            "sport": "Football",
+            "team1": "Panama",
+            "team2": "Croatia",
+            "channel": "BBC One GB",
+            "important": false,
+            "matchDate": "2026-06-24",
+            "channels": [
+                {
+                    "name": "BBC One",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=1"
+                    ],
+                    "number": 1,
+                    "language": "GB",
+                    "links": [
+                        "https://s2.kora.st/channel?id=1"
+                    ]
+                },
+                {
+                    "name": "MagentaTV",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=11"
+                    ],
+                    "number": 11,
+                    "language": "DE",
+                    "links": [
+                        "https://s2.kora.st/channel?id=11"
+                    ]
+                },
+                {
+                    "name": "TSN1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=31"
+                    ],
+                    "number": 31,
+                    "language": "CA",
+                    "links": [
+                        "https://s2.kora.st/channel?id=31"
+                    ]
+                },
+                {
+                    "name": "DAZN",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=47"
+                    ],
+                    "number": 47,
+                    "language": "IT",
+                    "links": [
+                        "https://s2.kora.st/channel?id=47"
+                    ]
+                },
+                {
+                    "name": "beIN Sports 1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=51"
+                    ],
+                    "number": 51,
+                    "language": "FR",
+                    "links": [
+                        "https://s2.kora.st/channel?id=51"
+                    ]
+                },
+                {
+                    "name": "TVP Sport",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=60"
+                    ],
+                    "number": 60,
+                    "language": "PL",
+                    "links": [
+                        "https://s2.kora.st/channel?id=60"
+                    ]
+                },
+                {
+                    "name": "HRT 2",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=70"
+                    ],
+                    "number": 70,
+                    "language": "HR",
+                    "links": [
+                        "https://s2.kora.st/channel?id=70"
+                    ]
+                },
+                {
+                    "name": "TV4",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=74"
+                    ],
+                    "number": 74,
+                    "language": "SE",
+                    "links": [
+                        "https://s2.kora.st/channel?id=74"
+                    ]
+                },
+                {
+                    "name": "DAZN Mundial",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=100"
+                    ],
+                    "number": 100,
+                    "language": "ES",
+                    "links": [
+                        "https://s2.kora.st/channel?id=100"
+                    ]
+                }
+            ],
+            "slug": "fifa-world-cup-football-panama-croatia-2026-06-24-02-00",
+            "startTimestamp": 1782255600000,
+            "duration": 120
+        },
+        {
+            "matchText": "05:00 [FIFA World Cup] Colombia vs Congo DR [ITV 1 GB]",
+            "matchstr": "Colombia vs Congo DR",
+            "time": "05:00",
+            "league": "FIFA World Cup",
+            "sport": "Football",
+            "team1": "Colombia",
+            "team2": "Congo DR",
+            "channel": "ITV 1 GB",
+            "important": false,
+            "matchDate": "2026-06-24",
+            "channels": [
+                {
+                    "name": "ITV 1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=1"
+                    ],
+                    "number": 1,
+                    "language": "GB",
+                    "links": [
+                        "https://s2.kora.st/channel?id=1"
+                    ]
+                },
+                {
+                    "name": "MagentaTV",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=11"
+                    ],
+                    "number": 11,
+                    "language": "DE",
+                    "links": [
+                        "https://s2.kora.st/channel?id=11"
+                    ]
+                },
+                {
+                    "name": "TSN1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=31"
+                    ],
+                    "number": 31,
+                    "language": "CA",
+                    "links": [
+                        "https://s2.kora.st/channel?id=31"
+                    ]
+                },
+                {
+                    "name": "DAZN",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=47"
+                    ],
+                    "number": 47,
+                    "language": "IT",
+                    "links": [
+                        "https://s2.kora.st/channel?id=47"
+                    ]
+                },
+                {
+                    "name": "beIN Sports 1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=51"
+                    ],
+                    "number": 51,
+                    "language": "FR",
+                    "links": [
+                        "https://s2.kora.st/channel?id=51"
+                    ]
+                },
+                {
+                    "name": "TVP Sport",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=60"
+                    ],
+                    "number": 60,
+                    "language": "PL",
+                    "links": [
+                        "https://s2.kora.st/channel?id=60"
+                    ]
+                },
+                {
+                    "name": "HRT 2",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=70"
+                    ],
+                    "number": 70,
+                    "language": "HR",
+                    "links": [
+                        "https://s2.kora.st/channel?id=70"
+                    ]
+                },
+                {
+                    "name": "TV4",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=74"
+                    ],
+                    "number": 74,
+                    "language": "SE",
+                    "links": [
+                        "https://s2.kora.st/channel?id=74"
+                    ]
+                },
+                {
+                    "name": "Fox Sports 1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=81"
+                    ],
+                    "number": 81,
+                    "language": "US",
+                    "links": [
+                        "https://s2.kora.st/channel?id=81"
+                    ]
+                },
+                {
+                    "name": "DAZN Mundial",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=100"
+                    ],
+                    "number": 100,
+                    "language": "ES",
+                    "links": [
+                        "https://s2.kora.st/channel?id=100"
+                    ]
+                }
+            ],
+            "slug": "fifa-world-cup-football-colombia-congo-dr-2026-06-24-05-00",
+            "startTimestamp": 1782266400000,
+            "duration": 120
+        },
+        {
+            "matchText": "22:00 [FIFA World Cup] Switzerland vs Canada [ITV 1 GB]",
+            "matchstr": "Switzerland vs Canada",
+            "time": "22:00",
+            "league": "FIFA World Cup",
+            "sport": "Football",
+            "team1": "Switzerland",
+            "team2": "Canada",
+            "channel": "ITV 1 GB",
+            "important": false,
+            "matchDate": "2026-06-24",
+            "channels": [
+                {
+                    "name": "ITV 1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=1"
+                    ],
+                    "number": 1,
+                    "language": "GB",
+                    "links": [
+                        "https://s2.kora.st/channel?id=1"
+                    ]
+                },
+                {
+                    "name": "MagentaTV",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=11"
+                    ],
+                    "number": 11,
+                    "language": "DE",
+                    "links": [
+                        "https://s2.kora.st/channel?id=11"
+                    ]
+                },
+                {
+                    "name": "TSN1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=31"
+                    ],
+                    "number": 31,
+                    "language": "CA",
+                    "links": [
+                        "https://s2.kora.st/channel?id=31"
+                    ]
+                },
+                {
+                    "name": "M6",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=56"
+                    ],
+                    "number": 56,
+                    "language": "FR",
+                    "links": [
+                        "https://s2.kora.st/channel?id=56"
+                    ]
+                },
+                {
+                    "name": "TVP1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=61"
+                    ],
+                    "number": 61,
+                    "language": "PL",
+                    "links": [
+                        "https://s2.kora.st/channel?id=61"
+                    ]
+                },
+                {
+                    "name": "HRTi",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=69"
+                    ],
+                    "number": 69,
+                    "language": "HR",
+                    "links": [
+                        "https://s2.kora.st/channel?id=69"
+                    ]
+                },
+                {
+                    "name": "TV4",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=74"
+                    ],
+                    "number": 74,
+                    "language": "SE",
+                    "links": [
+                        "https://s2.kora.st/channel?id=74"
+                    ]
+                },
+                {
+                    "name": "DAZN Mundial",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=100"
+                    ],
+                    "number": 100,
+                    "language": "ES",
+                    "links": [
+                        "https://s2.kora.st/channel?id=100"
+                    ]
+                }
+            ],
+            "slug": "fifa-world-cup-football-switzerland-canada-2026-06-24-22-00",
+            "startTimestamp": 1782327600000,
+            "duration": 120
+        },
+        {
+            "matchText": "22:00 [FIFA World Cup] Bosnia and Herzegovina vs Qatar [ITV 4 GB]",
+            "matchstr": "Bosnia and Herzegovina vs Qatar",
+            "time": "22:00",
+            "league": "FIFA World Cup",
+            "sport": "Football",
+            "team1": "Bosnia and Herzegovina",
+            "team2": "Qatar",
+            "channel": "ITV 4 GB",
+            "important": false,
+            "matchDate": "2026-06-24",
+            "channels": [
+                {
+                    "name": "ITV 4",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=4"
+                    ],
+                    "number": 4,
+                    "language": "GB",
+                    "links": [
+                        "https://s2.kora.st/channel?id=4"
+                    ]
+                },
+                {
+                    "name": "MagentaTV 2",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=12"
+                    ],
+                    "number": 12,
+                    "language": "DE",
+                    "links": [
+                        "https://s2.kora.st/channel?id=12"
+                    ]
+                },
+                {
+                    "name": "Sport TV1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=21"
+                    ],
+                    "number": 21,
+                    "language": "PT",
+                    "links": [
+                        "https://s2.kora.st/channel?id=21"
+                    ]
+                },
+                {
+                    "name": "beIN Sports 2",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=52"
+                    ],
+                    "number": 52,
+                    "language": "FR",
+                    "links": [
+                        "https://s2.kora.st/channel?id=52"
+                    ]
+                },
+                {
+                    "name": "TVP Sport",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=60"
+                    ],
+                    "number": 60,
+                    "language": "PL",
+                    "links": [
+                        "https://s2.kora.st/channel?id=60"
+                    ]
+                },
+                {
+                    "name": "Fox Sports 1",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=81"
+                    ],
+                    "number": 81,
+                    "language": "US",
+                    "links": [
+                        "https://s2.kora.st/channel?id=81"
+                    ]
+                },
+                {
+                    "name": "DAZN Mundial 2",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=99"
+                    ],
+                    "number": 99,
+                    "language": "ES",
+                    "links": [
+                        "https://s2.kora.st/channel?id=99"
+                    ]
+                }
+            ],
+            "slug": "fifa-world-cup-football-bosnia-and-herzegovina-qatar-2026-06-24-22-00",
+            "startTimestamp": 1782327600000,
+            "duration": 120
+        },
+        {
+            "matchText": "05:00 [WNBA] Basketball: New York Liberty vs Las Vegas Aces [USA Network]",
+            "matchstr": "New York Liberty vs Las Vegas Aces",
+            "time": "05:00",
+            "league": "WNBA",
+            "sport": "Basketball",
+            "team1": "New York Liberty",
+            "team2": "Las Vegas Aces",
+            "channel": "USA Network",
+            "important": false,
+            "matchDate": "2026-06-24",
+            "channels": [
+                {
+                    "name": "USA Network",
+                    "oldLinks": [
+                        "https://playfa.st/ch.php?id=10"
+                    ],
+                    "number": 10,
+                    "language": null,
+                    "links": [
+                        "https://s2.kora.st/channel?id=10"
+                    ]
+                }
+            ],
+            "slug": "wnba-basketball-new-york-liberty-las-vegas-aces-2026-06-24-05-00",
+            "startTimestamp": 1782266400000,
             "duration": 120
         }
     ]
