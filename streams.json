@@ -255,56 +255,6 @@
             "duration": 120
         },
         {
-            "matchText": "10:40 [MotoGP] Motorsport: Czech Republic Grand Prix [TNT Sports 2 GB]",
-            "matchstr": "Czech Republic Grand Prix",
-            "time": "10:40",
-            "league": "MotoGP",
-            "sport": "Motorsport",
-            "team1": "Czech Republic Grand Prix",
-            "team2": null,
-            "channel": "TNT Sports 2 GB",
-            "important": false,
-            "matchDate": "2026-06-21",
-            "channels": [
-                {
-                    "name": "TNT Sports 2",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=2"
-                    ],
-                    "number": 2,
-                    "language": "GB",
-                    "links": [
-                        "https://s2.kora.st/channel?id=2"
-                    ]
-                },
-                {
-                    "name": "Sky Sport Mix",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=12"
-                    ],
-                    "number": 12,
-                    "language": "DE",
-                    "links": [
-                        "https://s2.kora.st/channel?id=12"
-                    ]
-                },
-                {
-                    "name": "DAZN MotoGP",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=30"
-                    ],
-                    "number": 30,
-                    "language": "ES",
-                    "links": [
-                        "https://s2.kora.st/channel?id=30"
-                    ]
-                }
-            ],
-            "slug": "motogp-motorsport-czech-republic-grand-prix-2026-06-21-10-40",
-            "startTimestamp": 1782027600000,
-            "duration": 400
-        },
-        {
             "matchText": "23:00 [WNBA] Basketball: Golden State Valkyries vs Las Vegas Aces [CBS US]",
             "matchstr": "Golden State Valkyries vs Las Vegas Aces",
             "time": "23:00",
@@ -442,34 +392,6 @@
             ],
             "slug": "nascar-cup-series-motorsport-anduril-250-2026-06-21-23-00",
             "startTimestamp": 1782072000000,
-            "duration": 120
-        },
-        {
-            "matchText": "15:00 [Norway Toppserien] Brann vs LSK [TV 2 Direkte NO]",
-            "matchstr": "Brann vs LSK",
-            "time": "15:00",
-            "league": "Norway Toppserien",
-            "sport": "Football",
-            "team1": "Brann",
-            "team2": "LSK",
-            "channel": "TV 2 Direkte NO",
-            "important": false,
-            "matchDate": "2026-06-21",
-            "channels": [
-                {
-                    "name": "TV 2 Direkte",
-                    "oldLinks": [
-                        "https://playfa.st/ch.php?id=66"
-                    ],
-                    "number": 66,
-                    "language": "NO",
-                    "links": [
-                        "https://s2.kora.st/channel?id=66"
-                    ]
-                }
-            ],
-            "slug": "norway-toppserien-football-brann-lsk-2026-06-21-15-00",
-            "startTimestamp": 1782043200000,
             "duration": 120
         },
         {
