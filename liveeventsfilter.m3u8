@@ -39,6 +39,11 @@ https://mainstreams.pro/hls/jkzahzadach20.m3u8
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net/new-stream-embed/52538?ad=111
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://chatgpt.hereisman.net/playlist/52538/load-playlist
+#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[FIFA World Cup] Arabic Feed (XYZSTRM)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[FIFA World Cup] Arabic Feed (XYZSTRM)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st
+#EXTVLCOPT:http-origin=https://xyzstreams.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://lb.xyzcloud3.xyz/bein/index.m3u8
 #EXTINF:-1 tvg-chno="20" tvg-id="Soccer.Dummy.us" tvg-name="[FIFA World Cup] Australia vs Paraguay (STRMSGATE)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[FIFA World Cup] Australia vs Paraguay (STRMSGATE)
 #EXTVLCOPT:http-referrer=https://instream.click/jwp-eu.php?stream=HDWC3
 #EXTVLCOPT:http-origin=https://instream.click/jwp-eu.php?stream=HDWC3
@@ -254,6 +259,16 @@ https://storage.googleapis.com/mxyankees/giants/manifest.m3u8
 #EXTVLCOPT:http-origin=https://sportspass.cfd/mlb/bluejays.html
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://storage.googleapis.com/mxyankees/bluejays/manifest.m3u8
+#EXTINF:-1 tvg-chno="133" tvg-id="Live.Event.us" tvg-name="[Snooker] Snooker China Opene 1 (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Snooker] Snooker China Opene 1 (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://193.47.62.59/hls/brrrQQ.m3u8
+#EXTINF:-1 tvg-chno="134" tvg-id="Live.Event.us" tvg-name="[Snooker] Snooker China Opene 2 (FAWA)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Snooker] Snooker China Opene 2 (FAWA)
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+http://193.47.62.59/hls/brrrQ.m3u8
 #EXTINF:-1 tvg-chno="139" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Paraguay vs Australia, 2026 FIFA World Cup, Group Stage (SPRTSPASS)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Soccer] Paraguay vs Australia, 2026 FIFA World Cup, Group Stage (SPRTSPASS)
 #EXTVLCOPT:http-referrer=https://sportspass.cfd/soccer/fifawc.html
 #EXTVLCOPT:http-origin=https://sportspass.cfd/soccer/fifawc.html
@@ -274,58 +289,3 @@ https://chatgpt.hereisman.net/playlist/52541/load-playlist
 #EXTVLCOPT:http-origin=https://gooz.aapmains.net/new-stream-embed/52540?ad=111
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://chatgpt.hereisman.net/playlist/52540/load-playlist
-#EXTINF:-1 tvg-chno="151" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Curaçao vs Ivory Coast 2 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Curaçao vs Ivory Coast 2 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/fs1.m3u8
-#EXTINF:-1 tvg-chno="152" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Ecuador vs Germany 1 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Ecuador vs Germany 1 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/tsn1.m3u8
-#EXTINF:-1 tvg-chno="153" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Ecuador vs Germany 2 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Ecuador vs Germany 2 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/m6.m3u8
-#EXTINF:-1 tvg-chno="154" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Japan vs Sweden 1 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Japan vs Sweden 1 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/tsn2.m3u8
-#EXTINF:-1 tvg-chno="155" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Japan vs Sweden 2 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Japan vs Sweden 2 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/fs1.m3u8
-#EXTINF:-1 tvg-chno="156" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Paraguay vs Australia 1 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Paraguay vs Australia 1 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/tsn2.m3u8
-#EXTINF:-1 tvg-chno="157" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Paraguay vs Australia 2 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Paraguay vs Australia 2 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/tsn2.m3u8
-#EXTINF:-1 tvg-chno="158" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Tunisia vs Netherlands 1 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Tunisia vs Netherlands 1 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/tsn1.m3u8
-#EXTINF:-1 tvg-chno="159" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Tunisia vs Netherlands 2 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Tunisia vs Netherlands 2 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/m6.m3u8
-#EXTINF:-1 tvg-chno="160" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Turkey vs USA 1 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Turkey vs USA 1 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/tsn1.m3u8
-#EXTINF:-1 tvg-chno="161" tvg-id="Soccer.Dummy.us" tvg-name="[World Cup] Turkey vs USA 2 (FUTBOLX)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/4.png" group-title="Live Events",[World Cup] Turkey vs USA 2 (FUTBOLX)
-#EXTVLCOPT:http-referrer=https://futbol-x.xyz
-#EXTVLCOPT:http-origin=https://futbol-x.xyz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://futbolx-live.hf.space/live/fs1.m3u8
