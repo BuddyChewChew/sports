@@ -1,4 +1,14 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/sports/main/futbolx/futbolx_epg.xml.gz"
+#EXTINF:-1 tvg-id="futbolx-n4v1f9r4" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/g2uph61775058364.jpg/medium" group-title="Football",Norway vs France (Main Feed(En))
+https://storage.googleapis.com/puytihgkmhvaeovo1/mux_video_ts/index-1.m3u8
+#EXTINF:-1 tvg-id="futbolx-n4v1f9r4" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/g2uph61775058364.jpg/medium" group-title="Football",Norway vs France (Alt Feed(En))
+https://futbolx4-live.hf.space/live/fs1.m3u8
+#EXTINF:-1 tvg-id="futbolx-n4v1f9r4" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/g2uph61775058364.jpg/medium" group-title="Football",Norway vs France (Ext. Feed(Fr))
+https://futbolx-live.hf.space/live/fr.m3u8
+#EXTINF:-1 tvg-id="futbolx-s4v1i9r4" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/duwfkg1775058387.jpg/medium" group-title="Football",Senegal vs Iraq (Main Feed(En))
+https://futbolx6-live.hf.space/live/tsn2.m3u8
+#EXTINF:-1 tvg-id="futbolx-s4v1i9r4" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/duwfkg1775058387.jpg/medium" group-title="Football",Senegal vs Iraq (Alt Feed)
+https://futbolx6-live.hf.space/live/tsn2.m3u8
 #EXTINF:-1 tvg-id="futbolx-f4v1a9u4" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/jlsefm1774920210.jpg/medium" group-title="Motorsports",Austrian Grand Prix Practice 2
 https://futbolx-live.hf.space/live/f1.m3u8
 #EXTINF:-1 tvg-id="futbolx-n4k9s4s2" tvg-logo="https://api.ppv.to/assets/thumb/3ae629759ba983feb445a8a0017b8cec-thumbnail.jpg" group-title="Basketball",New York Knicks vs San Antonio Spurs
