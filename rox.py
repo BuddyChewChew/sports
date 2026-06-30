@@ -47,7 +47,7 @@ def get_tv_info(url, title=""):
     return "Sports.Rox.us", DEFAULT_LOGO, DEFAULT_GROUP
 
 def discover_sections(base_url):
-    """Finds top-level categories like /nba, /nhl, etc."""
+    """Finds top-level categories like /nba, /nhl, /mlb, /nfl, /fighting, /motorsports, etc."""
     sections_found = []
     try:
         resp = SESSION.get(base_url, timeout=10)
