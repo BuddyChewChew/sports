@@ -2,12 +2,6 @@
 
 PLAYLIST: https://raw.githubusercontent.com/BuddyChewChew/sports/refs/heads/main/liveeventsfilter.m3u8
 
-## ROXIE STREAMS
-
-WEBSITE: https://roxiestreams.live
-
-PLAYLIST: https://raw.githubusercontent.com/BuddyChewChew/sports/refs/heads/main/Roxiestreams.m3u
-
 ## POWERSTREAMS
 
 (OLD): https://raw.githubusercontent.com/BuddyChewChew/sports/refs/heads/main/power/power.m3u8
